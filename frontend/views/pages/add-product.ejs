@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-3">Add Product Information</h2>
+                        <p class="text-muted mb-4">Help us track where products are made and what materials are used.</p>
+
+                        <!-- Form -->
+                        <form id="add-product-form">
+
+                            <!-- Product Identification -->
+                            <div class="mb-4">
+                                <label for="asin" class="form-label fw-bold">Product ASIN <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="asin" name="asin" maxlength="10" required placeholder="B07XYZ1234">
+                                <small class="form-text text-muted">Amazon product identifier (10 characters)</small>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="title" class="form-label fw-bold">Product Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="title" name="title" required placeholder="Alpha Grillers Garlic Press">
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Manufacturing Information -->
+                            <h5 class="mb-3">Manufacturing Information</h5>
+
+                            <div class="mb-4">
+                                <label for="countryOfOrigin" class="form-label fw-bold">Country of Origin / Made In <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="countryOfOrigin" name="countryOfOrigin" required placeholder="e.g., China, USA, Germany, India">
+                                <small class="form-text text-muted">Where the product is manufactured</small>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="materials" class="form-label fw-bold">Materials Used <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="materials" name="materials" rows="3" required placeholder="e.g., Stainless Steel, Plastic, Aluminum, Silicone"></textarea>
+                                <small class="form-text text-muted">List all materials used in manufacturing</small>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="stickerLocation" class="form-label fw-bold">Where is the Sticker/Label Located? <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="stickerLocation" name="stickerLocation" required placeholder="e.g., Bottom of handle, Inside packaging, Back of product">
+                                <small class="form-text text-muted">Location of the manufacturing label or country of origin sticker</small>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="manufacturingNotes" class="form-label fw-bold">Additional Manufacturing Notes</label>
+                                <textarea class="form-control" id="manufacturingNotes" name="manufacturingNotes" rows="3" placeholder="Any other relevant information about manufacturing, quality, or origin indicators"></textarea>
+                                <small class="form-text text-muted">Optional: Any other observations about the product's origin or manufacturing</small>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Contributor Information -->
+                            <h5 class="mb-3">Your Information (Optional)</h5>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="username" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Optional">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Optional">
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle"></i> Your submission will be reviewed before being published. Thank you for contributing!
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane"></i> Submit Product Information
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="success-message" class="alert alert-success mt-4" style="display: none;">
+                            <h5><i class="fas fa-check-circle"></i> Information Submitted Successfully!</h5>
+                            <p class="mb-3">Thank you for your contribution. Your product information has been submitted for review.</p>
+                            <div class="d-grid gap-2">
+                                <a href="/search" class="btn btn-primary">View All Products</a>
+                                <button class="btn btn-outline-secondary" onclick="location.reload()">Add Another Product</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include('../partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const API_BASE_URL = '<%= API_BASE_URL %>';
+
+        // Form submission
+        document.getElementById('add-product-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+
+            // Build product data with manufacturing information in specifications
+            const productData = {
+                asin: formData.get('asin').toUpperCase().trim(),
+                title: formData.get('title').trim(),
+                category: 'Home & Kitchen',
+                subcategory: 'Garlic Presses',
+                price: {
+                    amount: 0.00,
+                    currency: 'USD',
+                    displayPrice: 'Price not specified'
+                },
+                description: `Manufacturing Information: Made in ${formData.get('countryOfOrigin')}. Materials: ${formData.get('materials')}. ${formData.get('manufacturingNotes') || ''}`,
+                specifications: {
+                    'Country of Origin': formData.get('countryOfOrigin').trim(),
+                    'Materials Used': formData.get('materials').trim(),
+                    'Sticker Location': formData.get('stickerLocation').trim(),
+                    'Manufacturing Notes': formData.get('manufacturingNotes')?.trim() || 'N/A'
+                },
+                images: {
+                    primary: 'https://placehold.co/400x400/667eea/white?text=Pending+Image'
+                },
+                submittedBy: {
+                    username: formData.get('username')?.trim() || 'anonymous',
+                    email: formData.get('email')?.trim() || ''
+                }
+            };
+
+            try {
+                // Show loading
+                const submitBtn = e.target.querySelector('button[type="submit"]');
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Submitting...';
+
+                const response = await axios.post(`${API_BASE_URL}/products`, productData);
+
+                if (response.data.success) {
+                    // Hide form and show success message
+                    document.getElementById('add-product-form').style.display = 'none';
+                    document.getElementById('success-message').style.display = 'block';
+                    window.scrollTo(0, 0);
+                } else {
+                    throw new Error(response.data.error || 'Submission failed');
+                }
+            } catch (error) {
+                // Re-enable button
+                const submitBtn = e.target.querySelector('button[type="submit"]');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Product Information';
+
+                // Show error
+                const errorMessage = error.response?.data?.error || error.message || 'An error occurred';
+                alert('Error submitting product: ' + errorMessage);
+                console.error('Submission error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

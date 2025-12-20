@@ -1,0 +1,245 @@
+/* Amazon Product Hub - Custom Styles */
+
+:root {
+  --primary-color: #232f3e;
+  --secondary-color: #ff9900;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+}
+
+/* Search Bar Styling */
+.search-form .input-group-text {
+  border-right: none;
+}
+
+.search-form .form-control {
+  border-left: none;
+}
+
+.search-form .form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.search-form .input-group:focus-within .input-group-text {
+  border-color: #86b7fe;
+}
+
+.search-form .input-group:focus-within .form-control {
+  border-color: #86b7fe;
+}
+
+/* Product Card Styles */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  height: 200px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.product-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  min-height: 2.5rem;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.rating-stars {
+  color: #ff9900;
+}
+
+/* Badges */
+.badge-verified {
+  background-color: var(--success-color);
+}
+
+.badge-pending {
+  background-color: #ffc107;
+}
+
+.badge-amazon {
+  background-color: #146eb4;
+}
+
+.badge-community {
+  background-color: #6f42c1;
+}
+
+/* Vote Buttons */
+.vote-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.2s;
+}
+
+.vote-btn:hover {
+  transform: scale(1.2);
+}
+
+.vote-btn.upvote {
+  color: #28a745;
+}
+
+.vote-btn.downvote {
+  color: #dc3545;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Loading Spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Error Page */
+.error-page {
+  padding: 3rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+}
+
+/* Form Wizard (for Add Product) */
+.wizard-step {
+  display: none;
+}
+
+.wizard-step.active {
+  display: block;
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.step-indicator::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #ddd;
+  z-index: -1;
+}
+
+.step-indicator .step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  background: white;
+}
+
+.step-indicator .step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ddd;
+  color: #666;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+
+.step-indicator .step.active .step-number {
+  background: var(--secondary-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.step-indicator .step.completed .step-number {
+  background: var(--success-color);
+  color: white;
+}
+
+.step-indicator .step-label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.step-indicator .step.active .step-label {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
