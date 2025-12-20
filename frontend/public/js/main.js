@@ -5,9 +5,9 @@
 
 // Configuration
 const CONFIG = {
-  API_BASE_URL: window.location.origin.includes('localhost:3000')
+  API_BASE_URL: window.location.origin.includes('localhost')
     ? 'http://localhost:5000/api'
-    : '/api'
+    : 'https://coobifl-production.up.railway.app/api'
 };
 
 /**
