@@ -105,8 +105,13 @@ class ProductRepository {
       country
     } = options;
 
+    // Use regex search instead of text index (fallback for disk space issues)
     const searchQuery = {
-      $text: { $search: query }
+      $or: [
+        { title: { $regex: query, $options: 'i' } },
+        { description: { $regex: query, $options: 'i' } },
+        { brand: { $regex: query, $options: 'i' } }
+      ]
     };
 
     // Apply additional filters
