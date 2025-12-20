@@ -521,103 +521,20 @@ exports.createIndexes = async (req, res, next) => {
 exports.seedDatabase = async (req, res, next) => {
   try {
     const Product = require('../models/Product');
+    const garlicPressProducts = require('../utils/seedGarlicPresses');
 
     // Ensure indexes are created
     await Product.createIndexes();
 
-    // Garlic press products data
-    const garlicPressProducts = [
-      {
-        asin: 'B0001WVH3I',
-        title: 'Joseph Joseph Rocker Garlic Crusher - Stainless Steel',
-        description: 'The Joseph Joseph Rocker garlic crusher features a unique rocking motion that makes crushing garlic cloves quick and easy. Made from high-quality stainless steel with a comfortable ergonomic design. Simply rock back and forth over peeled garlic cloves to crush them efficiently.',
-        price: { amount: 14.99, currency: 'USD', displayPrice: '$14.99' },
-        category: 'Home & Kitchen',
-        subcategory: 'Garlic Presses',
-        images: {
-          primary: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop',
-          variants: ['https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop']
-        },
-        rating: { average: 4.5, count: 3247 },
-        availability: { status: 'in_stock', message: 'In Stock' },
-        brand: 'Joseph Joseph',
-        features: [
-          'Unique rocking motion for easy crushing',
-          'Stainless steel construction',
-          'Ergonomic design',
-          'Dishwasher safe',
-          'No need to touch garlic'
-        ],
-        specifications: new Map([
-          ['Material', 'Stainless Steel'],
-          ['Dimensions', '5.5 x 2.4 x 1.2 inches'],
-          ['Weight', '4.8 ounces'],
-          ['Dishwasher Safe', 'Yes'],
-          ['Country of Origin', 'China'],
-          ['Materials Used', 'Stainless Steel 18/10, Food-grade plastic handle'],
-          ['Sticker Location', 'Bottom of handle grip'],
-          ['Manufacturing Notes', 'Quality tested, BPA-free materials']
-        ]),
-        amazonUrl: 'https://www.amazon.com/dp/B0001WVH3I',
-        origin: {
-          source: 'amazon_pa_api',
-          marketplace: 'US',
-          importedBy: 'seed_script',
-          importedAt: new Date()
-        }
-      },
-      {
-        asin: 'B00HHLNRVE',
-        title: 'Alpha Grillers Garlic Press - Stainless Steel Garlic Mincer & Crusher',
-        description: 'Heavy duty stainless steel garlic press with comfortable non-slip handles. Large chamber fits multiple cloves at once. Easy to clean with included cleaning brush. Built to last with premium materials and solid construction.',
-        price: { amount: 18.97, currency: 'USD', displayPrice: '$18.97' },
-        category: 'Home & Kitchen',
-        subcategory: 'Garlic Presses',
-        images: {
-          primary: 'https://images.unsplash.com/photo-1596040033229-a0b7e2a97fea?w=400&h=400&fit=crop',
-          variants: ['https://images.unsplash.com/photo-1596040033229-a0b7e2a97fea?w=400&h=400&fit=crop']
-        },
-        rating: { average: 4.7, count: 12589 },
-        availability: { status: 'in_stock', message: 'In Stock' },
-        brand: 'Alpha Grillers',
-        features: [
-          'Heavy duty stainless steel',
-          'Non-slip handles',
-          'Large garlic chamber',
-          'Dishwasher safe',
-          'Includes cleaning brush',
-          'Lifetime warranty'
-        ],
-        specifications: new Map([
-          ['Material', '304 Stainless Steel'],
-          ['Dimensions', '7.5 x 2.5 x 1.5 inches'],
-          ['Weight', '7.2 ounces'],
-          ['Warranty', 'Lifetime'],
-          ['Country of Origin', 'China'],
-          ['Materials Used', '304 Stainless Steel, Non-slip silicone grip'],
-          ['Sticker Location', 'Inside handle near hinge'],
-          ['Manufacturing Notes', 'Heavy-duty construction, FDA approved materials']
-        ]),
-        amazonUrl: 'https://www.amazon.com/dp/B00HHLNRVE',
-        origin: {
-          source: 'amazon_pa_api',
-          marketplace: 'US',
-          importedBy: 'seed_script',
-          importedAt: new Date()
-        }
-      }
-      // Add more products as needed - keeping it short for initial seed
-    ];
-
     // Clear existing products
     const deleteResult = await Product.deleteMany({});
 
-    // Insert new products
+    // Insert all 16 garlic press products
     const insertedProducts = await Product.insertMany(garlicPressProducts);
 
     res.status(200).json({
       success: true,
-      message: 'Database seeded successfully',
+      message: 'Database seeded successfully with all garlic press products',
       deleted: deleteResult.deletedCount,
       inserted: insertedProducts.length
     });

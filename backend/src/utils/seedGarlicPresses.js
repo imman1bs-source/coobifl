@@ -632,6 +632,9 @@ const garlicPressProducts = [
   }
 ];
 
+// Export for use in controller
+module.exports = garlicPressProducts;
+
 async function seedDatabase() {
   try {
     console.log('🚀 Starting garlic press seed script...\n');

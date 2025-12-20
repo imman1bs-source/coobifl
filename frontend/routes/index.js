@@ -44,4 +44,18 @@ router.get('/admin', (req, res) => {
   });
 });
 
+// Privacy Policy
+router.get('/privacy', (req, res) => {
+  res.render('pages/privacy', {
+    title: 'Privacy Policy - Coobifl'
+  });
+});
+
+// Terms of Service
+router.get('/terms', (req, res) => {
+  res.render('pages/terms', {
+    title: 'Terms of Service - Coobifl'
+  });
+});
+
 module.exports = router;
