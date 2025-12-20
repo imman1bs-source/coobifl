@@ -502,6 +502,9 @@ exports.seedDatabase = async (req, res, next) => {
   try {
     const Product = require('../models/Product');
 
+    // Ensure indexes are created
+    await Product.createIndexes();
+
     // Garlic press products data
     const garlicPressProducts = [
       {
