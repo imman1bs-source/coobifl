@@ -1,15 +1,6 @@
 const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '../../.env') });
 
-// Debug: Log ALL environment variables
-console.log('=== Environment Debug ===');
-console.log('Total env vars:', Object.keys(process.env).length);
-console.log('All env var keys:', Object.keys(process.env).sort());
-console.log('MONGODB_URI value:', process.env.MONGODB_URI);
-console.log('NODE_ENV:', process.env.NODE_ENV);
-console.log('PORT:', process.env.PORT);
-console.log('========================');
-
 /**
  * Environment configuration
  */
@@ -19,23 +10,22 @@ module.exports = {
   PORT: process.env.PORT || 5000,
 
   // Database
-  // Railway workaround: Hardcoded for Railway deployment
   MONGODB_URI: (() => {
-    console.log('Checking MONGODB_URI...');
-    console.log('process.env.MONGODB_URI:', process.env.MONGODB_URI);
-    console.log('process.env.MONGO_URL:', process.env.MONGO_URL);
-    console.log('process.env.RAILWAY_ENVIRONMENT:', process.env.RAILWAY_ENVIRONMENT);
-
+    // Check environment variables in order of preference
     if (process.env.MONGODB_URI) return process.env.MONGODB_URI;
     if (process.env.MONGO_URL) return process.env.MONGO_URL;
+
+    // Build from component variables
     if (process.env.MONGOUSER && process.env.MONGOPASSWORD && process.env.MONGOHOST) {
-      return `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${process.env.MONGOPORT || 27017}`;
+      return `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${process.env.MONGOPORT || 27017}/coobifl`;
     }
+
+    // Railway fallback (hardcoded connection string)
     if (process.env.RAILWAY_ENVIRONMENT) {
-      console.log('Using hardcoded Railway MongoDB URL');
-      return 'mongodb://mongo:NnXINgtEIdVcHxQGIPDnXooGQjVwZIFm@mongodb.railway.internal:27017';
+      return 'mongodb://mongo:NnXINgtEIdVcHxQGIPDnXooGQjVwZIFm@mongodb.railway.internal:27017/coobifl';
     }
-    console.log('Using localhost MongoDB URL');
+
+    // Local development fallback
     return 'mongodb://localhost:27017/amazon_product_hub';
   })(),
 

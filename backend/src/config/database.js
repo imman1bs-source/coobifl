@@ -13,9 +13,6 @@ const connectDB = async () => {
       serverSelectionTimeoutMS: 5000,
     };
 
-    console.log('MongoDB URI exists:', !!config.MONGODB_URI);
-    console.log('MongoDB URI from process.env:', !!process.env.MONGODB_URI);
-
     const conn = await mongoose.connect(config.MONGODB_URI, options);
 
     console.log(`MongoDB Connected: ${conn.connection.host}`);
