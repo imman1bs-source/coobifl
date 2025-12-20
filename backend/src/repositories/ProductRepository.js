@@ -132,8 +132,8 @@ class ProductRepository {
     const skip = (page - 1) * limit;
 
     const [products, total] = await Promise.all([
-      Product.find(searchQuery, { score: { $meta: 'textScore' } })
-        .sort({ score: { $meta: 'textScore' } })
+      Product.find(searchQuery)
+        .sort({ 'rating.average': -1, createdAt: -1 })
         .skip(skip)
         .limit(limit)
         .lean(),
