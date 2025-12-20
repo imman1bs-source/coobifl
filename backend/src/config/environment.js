@@ -3,8 +3,8 @@ const fs = require('fs');
 
 // Load environment-specific .env file
 const envFile = process.env.NODE_ENV === 'production'
-  ? path.join(__dirname, '../../.env.production')
-  : path.join(__dirname, '../../.env');
+  ? path.join(__dirname, '../../../.env.production')
+  : path.join(__dirname, '../../../.env');
 
 if (fs.existsSync(envFile)) {
   require('dotenv').config({ path: envFile });
