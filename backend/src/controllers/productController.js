@@ -523,8 +523,8 @@ exports.seedDatabase = async (req, res, next) => {
     const Product = require('../models/Product');
     const garlicPressProducts = require('../utils/seedGarlicPresses');
 
-    // Ensure indexes are created
-    await Product.createIndexes();
+    // Skip index creation to avoid disk space issues on Railway free tier
+    // Indexes will be created automatically by Mongoose when needed
 
     // Clear existing products
     const deleteResult = await Product.deleteMany({});
