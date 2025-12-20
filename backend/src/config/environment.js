@@ -19,7 +19,12 @@ module.exports = {
   PORT: process.env.PORT || 5000,
 
   // Database
-  MONGODB_URI: process.env.MONGODB_URI || 'mongodb://localhost:27017/amazon_product_hub',
+  // Railway workaround: Build MongoDB URL from individual components if MONGODB_URI not set
+  MONGODB_URI: process.env.MONGODB_URI ||
+    process.env.MONGO_URL ||
+    (process.env.MONGOUSER && process.env.MONGOPASSWORD && process.env.MONGOHOST
+      ? `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${process.env.MONGOPORT || 27017}`
+      : 'mongodb://localhost:27017/amazon_product_hub'),
 
   // Redis (optional for caching)
   REDIS_HOST: process.env.REDIS_HOST || 'localhost',
