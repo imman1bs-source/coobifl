@@ -1,11 +1,13 @@
 const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '../../.env') });
 
-// Debug: Log all environment variables that start with MONGO
+// Debug: Log ALL environment variables
 console.log('=== Environment Debug ===');
-console.log('All env vars starting with MONGO:', Object.keys(process.env).filter(k => k.includes('MONGO')));
+console.log('Total env vars:', Object.keys(process.env).length);
+console.log('All env var keys:', Object.keys(process.env).sort());
 console.log('MONGODB_URI value:', process.env.MONGODB_URI);
 console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('PORT:', process.env.PORT);
 console.log('========================');
 
 /**
