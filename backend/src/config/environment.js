@@ -1,5 +1,17 @@
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '../../.env') });
+const fs = require('fs');
+
+// Load environment-specific .env file
+const envFile = process.env.NODE_ENV === 'production'
+  ? path.join(__dirname, '../../.env.production')
+  : path.join(__dirname, '../../.env');
+
+if (fs.existsSync(envFile)) {
+  require('dotenv').config({ path: envFile });
+  console.log(`Loaded environment from: ${envFile}`);
+} else {
+  console.log(`No .env file found at: ${envFile}`);
+}
 
 /**
  * Environment configuration
