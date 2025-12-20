@@ -495,6 +495,26 @@ exports.getStats = async (req, res, next) => {
 };
 
 /**
+ * Create database indexes
+ * POST /api/create-indexes
+ */
+exports.createIndexes = async (req, res, next) => {
+  try {
+    const Product = require('../models/Product');
+
+    // Create all indexes defined in the schema
+    await Product.createIndexes();
+
+    res.status(200).json({
+      success: true,
+      message: 'Indexes created successfully'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+/**
  * Seed database with garlic press products
  * POST /api/seed
  */
