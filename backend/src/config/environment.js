@@ -12,10 +12,12 @@ module.exports = {
   // Database
   MONGODB_URI: (() => {
     console.log('DEBUG: Checking MongoDB connection variables...');
+    console.log('DEBUG: ALL ENV VARS:', JSON.stringify(Object.keys(process.env).sort()));
     console.log('DEBUG: MONGODB_URI =', process.env.MONGODB_URI);
     console.log('DEBUG: MONGO_URL =', process.env.MONGO_URL);
     console.log('DEBUG: MONGOUSER =', process.env.MONGOUSER);
     console.log('DEBUG: MONGOHOST =', process.env.MONGOHOST);
+    console.log('DEBUG: TEST_VAR =', process.env.TEST_VAR);
 
     // Check environment variables in order of preference
     if (process.env.MONGODB_URI) {
