@@ -1,5 +1,5 @@
 /**
- * Amazon Product Hub - Main JavaScript
+ * Coobifl - Main JavaScript
  * Client-side functionality for the application
  */
 
@@ -137,7 +137,7 @@ function updateVoteCounts(productId, data) {
  * Initialize event listeners
  */
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Amazon Product Hub initialized');
+  console.log('Coobifl initialized');
 
   // Add event listeners for vote buttons when they exist
   document.querySelectorAll('.vote-btn').forEach(btn => {

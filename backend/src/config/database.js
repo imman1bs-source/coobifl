@@ -11,6 +11,9 @@ const connectDB = async () => {
       minPoolSize: 2,
       socketTimeoutMS: 45000,
       serverSelectionTimeoutMS: 5000,
+      autoIndex: false, // Don't build indexes automatically to save disk space
+      retryWrites: true,
+      w: 'majority'
     };
 
     const conn = await mongoose.connect(config.MONGODB_URI, options);
@@ -28,7 +31,11 @@ const connectDB = async () => {
     });
 
     mongoose.connection.on('disconnected', () => {
-      console.log('Mongoose disconnected from MongoDB');
+      console.log('Mongoose disconnected from MongoDB - attempting to reconnect...');
+    });
+
+    mongoose.connection.on('reconnected', () => {
+      console.log('Mongoose reconnected to MongoDB');
     });
 
     // Graceful shutdown
@@ -41,7 +48,8 @@ const connectDB = async () => {
     return conn;
   } catch (error) {
     console.error(`Error connecting to MongoDB: ${error.message}`);
-    process.exit(1);
+    console.error('Retrying connection in 5 seconds...');
+    setTimeout(connectDB, 5000);
   }
 };
 
