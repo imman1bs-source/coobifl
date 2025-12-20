@@ -20,12 +20,24 @@ module.exports = {
 
   // Database
   // Railway workaround: Hardcoded for Railway deployment
-  MONGODB_URI: process.env.MONGODB_URI ||
-    process.env.MONGO_URL ||
-    (process.env.MONGOUSER && process.env.MONGOPASSWORD && process.env.MONGOHOST
-      ? `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${process.env.MONGOPORT || 27017}`
-      : process.env.RAILWAY_ENVIRONMENT ? 'mongodb://mongo:NnXINgtEIdVcHxQGIPDnXooGQjVwZIFm@mongodb.railway.internal:27017'
-      : 'mongodb://localhost:27017/amazon_product_hub'),
+  MONGODB_URI: (() => {
+    console.log('Checking MONGODB_URI...');
+    console.log('process.env.MONGODB_URI:', process.env.MONGODB_URI);
+    console.log('process.env.MONGO_URL:', process.env.MONGO_URL);
+    console.log('process.env.RAILWAY_ENVIRONMENT:', process.env.RAILWAY_ENVIRONMENT);
+
+    if (process.env.MONGODB_URI) return process.env.MONGODB_URI;
+    if (process.env.MONGO_URL) return process.env.MONGO_URL;
+    if (process.env.MONGOUSER && process.env.MONGOPASSWORD && process.env.MONGOHOST) {
+      return `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${process.env.MONGOPORT || 27017}`;
+    }
+    if (process.env.RAILWAY_ENVIRONMENT) {
+      console.log('Using hardcoded Railway MongoDB URL');
+      return 'mongodb://mongo:NnXINgtEIdVcHxQGIPDnXooGQjVwZIFm@mongodb.railway.internal:27017';
+    }
+    console.log('Using localhost MongoDB URL');
+    return 'mongodb://localhost:27017/amazon_product_hub';
+  })(),
 
   // Redis (optional for caching)
   REDIS_HOST: process.env.REDIS_HOST || 'localhost',
