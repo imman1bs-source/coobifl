@@ -1,8 +1,8 @@
 [build]
 builder = "nixpacks"
-buildCommand = "cd backend && npm install --production"
+buildCommand = "npm run build"
 
 [deploy]
-startCommand = "cd backend && node src/app.js"
+startCommand = "npm start"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 10
