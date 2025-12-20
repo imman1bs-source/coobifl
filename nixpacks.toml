@@ -1,5 +1,6 @@
 [phases.setup]
 nixPkgs = ["nodejs-18_x"]
+nixpacksVersion = "1.38.0"
 
 [phases.install]
 dependsOn = ["setup"]
@@ -10,4 +11,4 @@ dependsOn = ["install"]
 cmds = ["echo 'No build step required'"]
 
 [start]
-cmd = "cd backend && node src/app.js"
+cmd = "node backend/src/app.js"
