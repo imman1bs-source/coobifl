@@ -18,8 +18,18 @@ connectDB();
 app.use(helmet());
 
 // CORS configuration
+const allowedOrigins = config.FRONTEND_URL.split(',').map(url => url.trim());
 app.use(cors({
-  origin: config.FRONTEND_URL,
+  origin: (origin, callback) => {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 
