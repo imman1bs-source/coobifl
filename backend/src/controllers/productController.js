@@ -542,3 +542,48 @@ exports.seedDatabase = async (req, res, next) => {
     next(error);
   }
 };
+
+
+/**
+ * Update product images to Amazon widget URLs
+ * POST /api/update-images
+ */
+exports.updateProductImages = async (req, res, next) => {
+  try {
+    const Product = require('../models/Product');
+
+    // Generate Amazon widget image URLs
+    function generateAmazonImageUrls(asin) {
+      const baseUrl = 'https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8';
+      return {
+        primary: `${baseUrl}&ASIN=${asin}&Format=_SL500_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1`,
+        variants: [
+          `${baseUrl}&ASIN=${asin}&Format=_SL400_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1`,
+          `${baseUrl}&ASIN=${asin}&Format=_SL300_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1`
+        ]
+      };
+    }
+
+    // Get all products
+    const products = await Product.find({});
+    let updated = 0;
+
+    // Update each product
+    for (const product of products) {
+      if (product.asin) {
+        product.images = generateAmazonImageUrls(product.asin);
+        await product.save();
+        updated++;
+      }
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Product images updated successfully',
+      updated: updated,
+      total: products.length
+    });
+  } catch (error) {
+    next(error);
+  }
+};

@@ -22,4 +22,7 @@ router.post('/create-indexes', productController.createIndexes);
 // Seed database with garlic press products
 router.post('/seed', productController.seedDatabase);
 
+// Update product images to Amazon widget URLs
+router.post('/update-images', productController.updateProductImages);
+
 module.exports = router;
