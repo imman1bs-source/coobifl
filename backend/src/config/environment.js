@@ -15,14 +15,10 @@ module.exports = {
     if (process.env.MONGODB_URI) return process.env.MONGODB_URI;
     if (process.env.MONGO_URL) return process.env.MONGO_URL;
 
-    // Build from component variables
+    // Build from Railway's MongoDB plugin variables
     if (process.env.MONGOUSER && process.env.MONGOPASSWORD && process.env.MONGOHOST) {
-      return `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${process.env.MONGOPORT || 27017}/coobifl`;
-    }
-
-    // Railway fallback (hardcoded connection string)
-    if (process.env.RAILWAY_ENVIRONMENT) {
-      return 'mongodb://mongo:NnXINgtEIdVcHxQGIPDnXooGQjVwZIFm@mongodb.railway.internal:27017/coobifl';
+      const port = process.env.MONGOPORT || 27017;
+      return `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${port}/coobifl`;
     }
 
     // Local development fallback
