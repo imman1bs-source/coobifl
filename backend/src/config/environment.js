@@ -11,17 +11,32 @@ module.exports = {
 
   // Database
   MONGODB_URI: (() => {
+    console.log('DEBUG: Checking MongoDB connection variables...');
+    console.log('DEBUG: MONGODB_URI =', process.env.MONGODB_URI);
+    console.log('DEBUG: MONGO_URL =', process.env.MONGO_URL);
+    console.log('DEBUG: MONGOUSER =', process.env.MONGOUSER);
+    console.log('DEBUG: MONGOHOST =', process.env.MONGOHOST);
+
     // Check environment variables in order of preference
-    if (process.env.MONGODB_URI) return process.env.MONGODB_URI;
-    if (process.env.MONGO_URL) return process.env.MONGO_URL;
+    if (process.env.MONGODB_URI) {
+      console.log('DEBUG: Using MONGODB_URI');
+      return process.env.MONGODB_URI;
+    }
+    if (process.env.MONGO_URL) {
+      console.log('DEBUG: Using MONGO_URL');
+      return process.env.MONGO_URL;
+    }
 
     // Build from Railway's MongoDB plugin variables
     if (process.env.MONGOUSER && process.env.MONGOPASSWORD && process.env.MONGOHOST) {
       const port = process.env.MONGOPORT || 27017;
-      return `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${port}/coobifl`;
+      const url = `mongodb://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@${process.env.MONGOHOST}:${port}/coobifl`;
+      console.log('DEBUG: Built from components:', url);
+      return url;
     }
 
     // Local development fallback
+    console.log('DEBUG: Using localhost fallback');
     return 'mongodb://localhost:27017/amazon_product_hub';
   })(),
 
