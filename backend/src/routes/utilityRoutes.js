@@ -16,4 +16,7 @@ router.get('/brands', productController.getBrands);
 // Get database statistics
 router.get('/stats', productController.getStats);
 
+// Seed database with garlic press products
+router.post('/seed', productController.seedDatabase);
+
 module.exports = router;
