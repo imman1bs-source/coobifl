@@ -1,0 +1,13 @@
+{
+  "name": "coobifl",
+  "version": "1.0.0",
+  "description": "Coobifl - Product Origin Tracker",
+  "scripts": {
+    "start": "cd backend && node src/app.js",
+    "install": "cd backend && npm install"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
