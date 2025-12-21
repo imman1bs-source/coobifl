@@ -6,14 +6,19 @@ const config = require('./environment');
  */
 const connectDB = async () => {
   try {
+    // Set mongoose to always use new connection methods
+    mongoose.set('strictQuery', false);
+
     const options = {
       maxPoolSize: 10,
       minPoolSize: 2,
       socketTimeoutMS: 45000,
-      serverSelectionTimeoutMS: 5000,
+      serverSelectionTimeoutMS: 10000, // Increased timeout
       autoIndex: false, // Don't build indexes automatically to save disk space
       retryWrites: true,
-      w: 'majority'
+      w: 'majority',
+      heartbeatFrequencyMS: 10000, // Check connection health every 10s
+      serverSelectionRetryMS: 5000
     };
 
     const conn = await mongoose.connect(config.MONGODB_URI, options);
@@ -48,8 +53,9 @@ const connectDB = async () => {
     return conn;
   } catch (error) {
     console.error(`Error connecting to MongoDB: ${error.message}`);
-    console.error('Retrying connection in 5 seconds...');
-    setTimeout(connectDB, 5000);
+    console.error('Will retry connection in 5 seconds...');
+    // Don't crash the app, just retry
+    return setTimeout(() => connectDB(), 5000);
   }
 };
 
