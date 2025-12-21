@@ -238,6 +238,39 @@
     <%- include('../partials/header') %>
 
     <main>
+        <!-- Search Header -->
+        <section class="search-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem 0; margin-bottom: 2rem;">
+            <div class="container">
+                <div class="d-flex align-items-center mb-3">
+                    <a href="/" class="btn btn-light d-flex align-items-center gap-2 me-3" style="background: white;">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <a href="/search" class="btn btn-light d-flex align-items-center gap-2" style="background: white;">
+                        <i class="fas fa-search"></i>
+                        <span>Back to Search</span>
+                    </a>
+                </div>
+                <form action="/search" method="GET" class="search-form">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text bg-white">
+                            <i class="fas fa-search text-muted"></i>
+                        </span>
+                        <input
+                            type="text"
+                            class="form-control border-start-0"
+                            name="q"
+                            placeholder="Search for products..."
+                            autocomplete="off"
+                        >
+                        <button class="btn btn-primary px-4" type="submit">
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
         <!-- Loading -->
         <div id="loading" class="container text-center py-5">
             <div class="spinner-border text-primary" role="status">
