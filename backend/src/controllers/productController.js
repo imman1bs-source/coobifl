@@ -560,7 +560,8 @@ exports.seedWalmartProducts = async (req, res, next) => {
 
     if (manual || !process.env.SERPAPI_KEY) {
       // Use manual seed data
-      console.log('📋 Using manual Walmart product data (no API key)');
+      console.log('📋 Using manual Walmart product data (no API key found)');
+      console.log(`   SERPAPI_KEY exists: ${!!process.env.SERPAPI_KEY}`);
       products = getManualWalmartProducts();
     } else {
       // Fetch from Walmart via SerpAPI
