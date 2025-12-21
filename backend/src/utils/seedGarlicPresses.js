@@ -542,34 +542,34 @@ const garlicPressProducts = [
     }
   },
   {
-    asin: 'B00GM3IKR4',
-    title: 'Dreamfarm Garject Lite Self-Cleaning Garlic Press - Black Nylon',
-    description: 'Lightweight version of the award-winning Garject. Made from durable nylon with the same self-cleaning and peel-ejecting features. Perfect for those who want less weight.',
-    price: { amount: 19.95, currency: 'USD', displayPrice: '$19.95' },
+    asin: 'B00HHLNRVE',
+    title: 'ORBLUE Garlic Press - Stainless Steel Mincer and Crusher',
+    description: 'Premium stainless steel garlic press with extra large chamber that can crush multiple garlic cloves at once. Ergonomic design reduces hand fatigue. Easy to clean with dishwasher safe construction.',
+    price: { amount: 16.99, currency: 'USD', displayPrice: '$16.99' },
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: 'https://ross.coobifl.com/images/products/B00GM3IKR4.jpg',
-      variants: ['https://ross.coobifl.com/images/products/B00GM3IKR4.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B00HHLNRVE.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B00HHLNRVE.jpg']
     },
-    rating: { average: 4.7, count: 4567 },
+    rating: { average: 4.6, count: 8934 },
     availability: { status: 'in_stock', message: 'In Stock' },
-    brand: 'Dreamfarm',
+    brand: 'ORBLUE',
     features: [
-      'Lightweight nylon construction',
-      'Self-cleaning mechanism',
-      'Peel eject button',
-      'No peeling needed',
-      'Dishwasher safe',
-      'Same Garject design'
+      'Extra large chamber',
+      'Premium stainless steel',
+      'Ergonomic comfortable grip',
+      'Easy squeeze handles',
+      'Includes cleaning tool',
+      'Dishwasher safe'
     ],
     specifications: new Map([
-      ['Material', 'Nylon'],
-      ['Dimensions', '8.5 x 3 x 2 inches'],
-      ['Weight', '6 ounces'],
-      ['Color', 'Black']
+      ['Material', 'Stainless Steel'],
+      ['Dimensions', '7.8 x 2.6 x 1.6 inches'],
+      ['Weight', '8 ounces'],
+      ['Color', 'Silver']
     ]),
-    amazonUrl: 'https://www.amazon.com/dp/B00GM3IKR4',
+    amazonUrl: 'https://www.amazon.com/dp/B00HHLNRVE',
     origin: {
       source: 'amazon_pa_api',
       marketplace: 'US',
