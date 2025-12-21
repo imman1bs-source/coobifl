@@ -665,3 +665,46 @@ exports.updateUnsplashImages = async (req, res, next) => {
     next(error);
   }
 };
+
+/**
+ * Update all products with working placeholder images  
+ * POST /api/update-placeholder-images
+ */
+exports.updatePlaceholderImages = async (req, res, next) => {
+  try {
+    const Product = require('../models/Product');
+
+    const placeholderImages = [
+      { primary: 'https://placehold.co/800x600/667eea/white?text=Kitchen+Press+1', variants: ['https://placehold.co/600x450/667eea/white?text=Kitchen+Press+1', 'https://placehold.co/400x300/667eea/white?text=Kitchen+Press+1'] },
+      { primary: 'https://placehold.co/800x600/764ba2/white?text=Garlic+Press+2', variants: ['https://placehold.co/600x450/764ba2/white?text=Garlic+Press+2', 'https://placehold.co/400x300/764ba2/white?text=Garlic+Press+2'] },
+      { primary: 'https://placehold.co/800x600/f093fb/white?text=Kitchen+Tool+3', variants: ['https://placehold.co/600x450/f093fb/white?text=Kitchen+Tool+3', 'https://placehold.co/400x300/f093fb/white?text=Kitchen+Tool+3'] },
+      { primary: 'https://placehold.co/800x600/4facfe/white?text=Press+Tool+4', variants: ['https://placehold.co/600x450/4facfe/white?text=Press+Tool+4', 'https://placehold.co/400x300/4facfe/white?text=Press+Tool+4'] },
+      { primary: 'https://placehold.co/800x600/00f2fe/white?text=Garlic+Crusher+5', variants: ['https://placehold.co/600x450/00f2fe/white?text=Garlic+Crusher+5', 'https://placehold.co/400x300/00f2fe/white?text=Garlic+Crusher+5'] },
+      { primary: 'https://placehold.co/800x600/43e97b/white?text=Kitchen+Utensil+6', variants: ['https://placehold.co/600x450/43e97b/white?text=Kitchen+Utensil+6', 'https://placehold.co/400x300/43e97b/white?text=Kitchen+Utensil+6'] },
+      { primary: 'https://placehold.co/800x600/38f9d7/white?text=Garlic+Mincer+7', variants: ['https://placehold.co/600x450/38f9d7/white?text=Garlic+Mincer+7', 'https://placehold.co/400x300/38f9d7/white?text=Garlic+Mincer+7'] },
+      { primary: 'https://placehold.co/800x600/fa709a/white?text=Kitchen+Press+8', variants: ['https://placehold.co/600x450/fa709a/white?text=Kitchen+Press+8', 'https://placehold.co/400x300/fa709a/white?text=Kitchen+Press+8'] },
+      { primary: 'https://placehold.co/800x600/fee140/333?text=Garlic+Press+9', variants: ['https://placehold.co/600x450/fee140/333?text=Garlic+Press+9', 'https://placehold.co/400x300/fee140/333?text=Garlic+Press+9'] },
+      { primary: 'https://placehold.co/800x600/30cfd0/white?text=Kitchen+Tool+10', variants: ['https://placehold.co/600x450/30cfd0/white?text=Kitchen+Tool+10', 'https://placehold.co/400x300/30cfd0/white?text=Kitchen+Tool+10'] }
+    ];
+
+    const products = await Product.find({});
+    let updated = 0;
+
+    for (let i = 0; i < products.length; i++) {
+      const product = products[i];
+      const imageSet = placeholderImages[i % placeholderImages.length];
+      product.images = imageSet;
+      await product.save();
+      updated++;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Updated all products with working placeholder images',
+      updated: updated,
+      total: products.length
+    });
+  } catch (error) {
+    next(error);
+  }
+};

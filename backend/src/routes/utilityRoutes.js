@@ -31,4 +31,7 @@ router.post('/restore-images', productController.restoreOriginalImages);
 // Update all products with Unsplash images
 router.post('/update-unsplash-images', productController.updateUnsplashImages);
 
+// Update all products with working placeholder images
+router.post('/update-placeholder-images', productController.updatePlaceholderImages);
+
 module.exports = router;
