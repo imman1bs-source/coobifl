@@ -35,3 +35,7 @@ router.post('/update-unsplash-images', productController.updateUnsplashImages);
 router.post('/update-placeholder-images', productController.updatePlaceholderImages);
 
 module.exports = router;
+
+// Update all products with local image paths
+router.post('/update-local-images', productController.updateLocalImages);
+

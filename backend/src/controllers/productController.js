@@ -708,3 +708,45 @@ exports.updatePlaceholderImages = async (req, res, next) => {
     next(error);
   }
 };
+
+/**
+ * Update all products with local image paths
+ * POST /api/update-local-images
+ */
+exports.updateLocalImages = async (req, res, next) => {
+  try {
+    const Product = require('../models/Product');
+
+    // Base URL for local images (will be served by Vercel from /public/images/products/)
+    const baseUrl = '/images/products';
+
+    const products = await Product.find({});
+    let updated = 0;
+
+    for (let i = 0; i < products.length; i++) {
+      const product = products[i];
+      const imageNum = (i % 16) + 1; // Cycle through 16 images
+      
+      product.images = {
+        primary: `${baseUrl}/garlic-press-${imageNum}.jpg`,
+        variants: [
+          `${baseUrl}/garlic-press-${imageNum}.jpg`,
+          `${baseUrl}/garlic-press-${imageNum}.jpg`
+        ]
+      };
+      
+      await product.save();
+      updated++;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Updated all products with local image paths',
+      updated: updated,
+      total: products.length,
+      note: 'Make sure to upload images to frontend/public/images/products/ folder'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
