@@ -39,3 +39,7 @@ module.exports = router;
 // Update all products with local image paths
 router.post('/update-local-images', productController.updateLocalImages);
 
+
+// Update all products with ASIN-based local images
+router.post('/update-asin-images', productController.updateAsinImages);
+

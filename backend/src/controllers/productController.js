@@ -750,3 +750,40 @@ exports.updateLocalImages = async (req, res, next) => {
     next(error);
   }
 };
+
+/**
+ * Update products with ASIN-based local images
+ * POST /api/update-asin-images
+ */
+exports.updateAsinImages = async (req, res, next) => {
+  try {
+    const Product = require('../models/Product');
+
+    const products = await Product.find({});
+    let updated = 0;
+
+    for (const product of products) {
+      if (product.asin) {
+        // Use ASIN as filename
+        product.images = {
+          primary: `/images/products/${product.asin}.jpg`,
+          variants: [
+            `/images/products/${product.asin}.jpg`,
+            `/images/products/${product.asin}.jpg`
+          ]
+        };
+        await product.save();
+        updated++;
+      }
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Updated all products with ASIN-based image paths',
+      updated: updated,
+      total: products.length
+    });
+  } catch (error) {
+    next(error);
+  }
+};
