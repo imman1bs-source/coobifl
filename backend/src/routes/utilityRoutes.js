@@ -22,6 +22,9 @@ router.post('/create-indexes', productController.createIndexes);
 // Seed database with garlic press products
 router.post('/seed', productController.seedDatabase);
 
+// Seed database with Walmart products (with COO extraction)
+router.post('/seed-walmart', productController.seedWalmartProducts);
+
 // Update product images to Amazon widget URLs
 router.post('/update-images', productController.updateProductImages);
 

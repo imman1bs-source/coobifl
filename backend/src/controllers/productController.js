@@ -543,6 +543,47 @@ exports.seedDatabase = async (req, res, next) => {
   }
 };
 
+/**
+ * Seed database with Walmart products (with COO extraction)
+ * POST /api/seed-walmart
+ */
+exports.seedWalmartProducts = async (req, res, next) => {
+  try {
+    const Product = require('../models/Product');
+    const { seedWalmartProducts, getManualWalmartProducts } = require('../utils/seedWalmartProducts');
+
+    // Check if SERPAPI_KEY is available
+    const useAPI = !!process.env.SERPAPI_KEY;
+    const { category = 'garlic press', limit = 20, manual = !useAPI } = req.body;
+
+    let products;
+
+    if (manual || !process.env.SERPAPI_KEY) {
+      // Use manual seed data
+      console.log('📋 Using manual Walmart product data (no API key)');
+      products = getManualWalmartProducts();
+    } else {
+      // Fetch from Walmart via SerpAPI
+      console.log('🔍 Fetching Walmart products via SerpAPI...');
+      products = await seedWalmartProducts(category, limit);
+    }
+
+    // Insert products into database (without clearing existing ones)
+    const insertedProducts = await Product.insertMany(products);
+
+    res.status(200).json({
+      success: true,
+      message: `Successfully seeded ${insertedProducts.length} Walmart products`,
+      inserted: insertedProducts.length,
+      method: manual || !process.env.SERPAPI_KEY ? 'manual' : 'api',
+      productsWithCOO: insertedProducts.filter(p => p.specifications?.['Country of Origin']).length
+    });
+  } catch (error) {
+    console.error('Error seeding Walmart products:', error);
+    next(error);
+  }
+};
+
 
 /**
  * Update product images to Amazon widget URLs
