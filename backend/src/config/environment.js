@@ -1,16 +1,18 @@
 const path = require('path');
 const fs = require('fs');
 
-// Load environment-specific .env file
-const envFile = process.env.NODE_ENV === 'production'
-  ? path.join(__dirname, '../../../.env.production')
-  : path.join(__dirname, '../../../.env');
+// Only load .env file in development (Railway provides env vars in production)
+if (process.env.NODE_ENV !== 'production') {
+  const envFile = path.join(__dirname, '../../../.env');
 
-if (fs.existsSync(envFile)) {
-  require('dotenv').config({ path: envFile });
-  console.log(`Loaded environment from: ${envFile}`);
+  if (fs.existsSync(envFile)) {
+    require('dotenv').config({ path: envFile });
+    console.log(`Loaded environment from: ${envFile}`);
+  } else {
+    console.log(`No .env file found at: ${envFile}`);
+  }
 } else {
-  console.log(`No .env file found at: ${envFile}`);
+  console.log('Production mode: Using Railway environment variables');
 }
 
 /**
