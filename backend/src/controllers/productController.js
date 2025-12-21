@@ -621,3 +621,47 @@ exports.restoreOriginalImages = async (req, res, next) => {
     next(error);
   }
 };
+
+/**
+ * Update all products with Unsplash images
+ * POST /api/update-unsplash-images
+ */
+exports.updateUnsplashImages = async (req, res, next) => {
+  try {
+    const Product = require('../models/Product');
+
+    // Curated working Unsplash image URLs
+    const kitchenImages = [
+      { primary: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80', variants: ['https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80', 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80', variants: ['https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80', 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80', variants: ['https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&q=80', 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1584990347449-39b5e727c443?w=800&q=80', variants: ['https://images.unsplash.com/photo-1584990347449-39b5e727c443?w=600&q=80', 'https://images.unsplash.com/photo-1584990347449-39b5e727c443?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80', variants: ['https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80', 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1596040033229-a0b7e2a97fea?w=800&q=80', variants: ['https://images.unsplash.com/photo-1596040033229-a0b7e2a97fea?w=600&q=80', 'https://images.unsplash.com/photo-1596040033229-a0b7e2a97fea?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1585516173406-a450ab2be648?w=800&q=80', variants: ['https://images.unsplash.com/photo-1585516173406-a450ab2be648?w=600&q=80', 'https://images.unsplash.com/photo-1585516173406-a450ab2be648?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1603189343302-e603f7add05a?w=800&q=80', variants: ['https://images.unsplash.com/photo-1603189343302-e603f7add05a?w=600&q=80', 'https://images.unsplash.com/photo-1603189343302-e603f7add05a?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?w=800&q=80', variants: ['https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?w=600&q=80', 'https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?w=400&q=80'] },
+      { primary: 'https://images.unsplash.com/photo-1556910636-196e58bd14f9?w=800&q=80', variants: ['https://images.unsplash.com/photo-1556910636-196e58bd14f9?w=600&q=80', 'https://images.unsplash.com/photo-1556910636-196e58bd14f9?w=400&q=80'] }
+    ];
+
+    const products = await Product.find({});
+    let updated = 0;
+
+    for (let i = 0; i < products.length; i++) {
+      const product = products[i];
+      const imageSet = kitchenImages[i % kitchenImages.length];
+      product.images = imageSet;
+      await product.save();
+      updated++;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Updated all products with Unsplash images',
+      updated: updated,
+      total: products.length
+    });
+  } catch (error) {
+    next(error);
+  }
+};

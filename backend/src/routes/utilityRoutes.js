@@ -28,4 +28,7 @@ router.post('/update-images', productController.updateProductImages);
 // Restore original Amazon CDN images from seed data
 router.post('/restore-images', productController.restoreOriginalImages);
 
+// Update all products with Unsplash images
+router.post('/update-unsplash-images', productController.updateUnsplashImages);
+
 module.exports = router;
