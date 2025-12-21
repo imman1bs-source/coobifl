@@ -18,11 +18,23 @@ router.get('/stats', productController.getStats);
 
 // Check environment variables (temporary debug endpoint)
 router.get('/env-check', (req, res) => {
+  // Get all env var keys that might be relevant
+  const allKeys = Object.keys(process.env);
+  const relevantKeys = allKeys.filter(key =>
+    key.includes('SERP') ||
+    key.includes('API') ||
+    key.includes('KEY') ||
+    key.includes('MONGO') ||
+    key === 'NODE_ENV'
+  );
+
   res.json({
     hasSerpApiKey: !!process.env.SERPAPI_KEY,
     serpApiKeyLength: process.env.SERPAPI_KEY ? process.env.SERPAPI_KEY.length : 0,
+    serpApiKeyFirst10: process.env.SERPAPI_KEY ? process.env.SERPAPI_KEY.substring(0, 10) + '...' : null,
     nodeEnv: process.env.NODE_ENV,
-    envVarsCount: Object.keys(process.env).length
+    envVarsCount: allKeys.length,
+    relevantEnvVars: relevantKeys
   });
 });
 
