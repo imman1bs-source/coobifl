@@ -31,12 +31,12 @@ const garlicPressProducts = [
       'Includes cleaning brush and peeler',
       'Lifetime warranty'
     ],
-    specifications: new Map([
-      ['Material', '304 Stainless Steel'],
-      ['Dimensions', '7.5 x 2.5 x 1.5 inches'],
-      ['Weight', '7.2 ounces'],
-      ['Country of Origin', 'China']
-    ]),
+    specifications: {
+      'Material': '304 Stainless Steel',
+      'Dimensions': '7.5 x 2.5 x 1.5 inches',
+      'Weight': '7.2 ounces',
+      'Country of Origin': 'China'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B00I937QEI',
     origin: {
       source: 'amazon_pa_api',
@@ -67,12 +67,12 @@ const garlicPressProducts = [
       'Spring-loaded design',
       'Dishwasher safe'
     ],
-    specifications: new Map([
-      ['Material', 'Chrome-Plated Zinc'],
-      ['Dimensions', '8.5 x 3 x 2 inches'],
-      ['Weight', '10 ounces'],
-      ['Country of Origin', 'Australia']
-    ]),
+    specifications: {
+      'Material': 'Chrome-Plated Zinc',
+      'Dimensions': '8.5 x 3 x 2 inches',
+      'Weight': '10 ounces',
+      'Country of Origin': 'Australia'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B007ADJ4JI',
     origin: {
       source: 'amazon_pa_api',
@@ -103,12 +103,12 @@ const garlicPressProducts = [
       'Ergonomic handles',
       'Dishwasher safe'
     ],
-    specifications: new Map([
-      ['Material', 'Stainless Steel'],
-      ['Dimensions', '7 x 2.5 x 1.5 inches'],
-      ['Weight', '9 ounces'],
-      ['Country of Origin', 'Switzerland']
-    ]),
+    specifications: {
+      'Material': 'Stainless Steel',
+      'Dimensions': '7 x 2.5 x 1.5 inches',
+      'Weight': '9 ounces',
+      'Country of Origin': 'Switzerland'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B08W5DJ3B9',
     origin: {
       source: 'amazon_pa_api',
@@ -139,12 +139,12 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'No need to peel garlic'
     ],
-    specifications: new Map([
-      ['Material', 'Stainless Steel'],
-      ['Dimensions', '7.5 x 3 x 2 inches'],
-      ['Weight', '7.5 ounces'],
-      ['Country of Origin', 'China']
-    ]),
+    specifications: {
+      'Material': 'Stainless Steel',
+      'Dimensions': '7.5 x 3 x 2 inches',
+      'Weight': '7.5 ounces',
+      'Country of Origin': 'China'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B09QBDRCRK',
     origin: {
       source: 'amazon_pa_api',
@@ -175,12 +175,12 @@ const garlicPressProducts = [
       'No need to peel garlic',
       'Built-in cleaning tool'
     ],
-    specifications: new Map([
-      ['Material', 'Die-Cast Aluminum'],
-      ['Dimensions', '7.75 x 2.75 x 1.5 inches'],
-      ['Weight', '6 ounces'],
-      ['Country of Origin', 'Switzerland']
-    ]),
+    specifications: {
+      'Material': 'Die-Cast Aluminum',
+      'Dimensions': '7.75 x 2.75 x 1.5 inches',
+      'Weight': '6 ounces',
+      'Country of Origin': 'Switzerland'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B007D3V00Q',
     origin: {
       source: 'amazon_pa_api',
@@ -211,12 +211,12 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'Lightweight'
     ],
-    specifications: new Map([
-      ['Material', 'Stainless Steel'],
-      ['Dimensions', '7.3 x 2.4 x 1.6 inches'],
-      ['Weight', '6.5 ounces'],
-      ['Country of Origin', 'China']
-    ]),
+    specifications: {
+      'Material': 'Stainless Steel',
+      'Dimensions': '7.3 x 2.4 x 1.6 inches',
+      'Weight': '6.5 ounces',
+      'Country of Origin': 'China'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B07N7KFHVH',
     origin: {
       source: 'amazon_pa_api',
@@ -247,13 +247,13 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'Award-winning design'
     ],
-    specifications: new Map([
-      ['Material', 'Chrome-Plated Zinc'],
-      ['Dimensions', '8.5 x 3 x 2 inches'],
-      ['Weight', '10 ounces'],
-      ['Color', 'Green'],
-      ['Country of Origin', 'Australia']
-    ]),
+    specifications: {
+      'Material': 'Chrome-Plated Zinc',
+      'Dimensions': '8.5 x 3 x 2 inches',
+      'Weight': '10 ounces',
+      'Color': 'Green',
+      'Country of Origin': 'Australia'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B06Y4F2MK4',
     origin: {
       source: 'amazon_pa_api',
@@ -284,13 +284,13 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'Vibrant red color'
     ],
-    specifications: new Map([
-      ['Material', 'Chrome-Plated Zinc'],
-      ['Dimensions', '8.5 x 3 x 2 inches'],
-      ['Weight', '10 ounces'],
-      ['Color', 'Red'],
-      ['Country of Origin', 'Australia']
-    ]),
+    specifications: {
+      'Material': 'Chrome-Plated Zinc',
+      'Dimensions': '8.5 x 3 x 2 inches',
+      'Weight': '10 ounces',
+      'Color': 'Red',
+      'Country of Origin': 'Australia'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B00XCSLO1Q',
     origin: {
       source: 'amazon_pa_api',
@@ -321,13 +321,13 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'No peeling needed'
     ],
-    specifications: new Map([
-      ['Material', 'Die-Cast Zinc'],
-      ['Dimensions', '7.5 x 3 x 2 inches'],
-      ['Weight', '8 ounces'],
-      ['Color', 'Black'],
-      ['Country of Origin', 'China']
-    ]),
+    specifications: {
+      'Material': 'Die-Cast Zinc',
+      'Dimensions': '7.5 x 3 x 2 inches',
+      'Weight': '8 ounces',
+      'Color': 'Black',
+      'Country of Origin': 'China'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B00HEZ888K',
     origin: {
       source: 'amazon_pa_api',
@@ -358,12 +358,12 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'Durable build'
     ],
-    specifications: new Map([
-      ['Material', 'Stainless Steel'],
-      ['Dimensions', '7 x 2.5 x 1.5 inches'],
-      ['Weight', '7 ounces'],
-      ['Country of Origin', 'China']
-    ]),
+    specifications: {
+      'Material': 'Stainless Steel',
+      'Dimensions': '7 x 2.5 x 1.5 inches',
+      'Weight': '7 ounces',
+      'Country of Origin': 'China'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B016KMPVOQ',
     origin: {
       source: 'amazon_pa_api',
@@ -394,13 +394,13 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'Vibrant green color'
     ],
-    specifications: new Map([
-      ['Material', 'Aluminum, Plastic'],
-      ['Dimensions', '7 x 2.5 x 1.5 inches'],
-      ['Weight', '5.5 ounces'],
-      ['Color', 'Green'],
-      ['Country of Origin', 'Switzerland']
-    ]),
+    specifications: {
+      'Material': 'Aluminum, Plastic',
+      'Dimensions': '7 x 2.5 x 1.5 inches',
+      'Weight': '5.5 ounces',
+      'Color': 'Green',
+      'Country of Origin': 'Switzerland'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B00CS9BZNM',
     origin: {
       source: 'amazon_pa_api',
@@ -431,13 +431,13 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'Vibrant red color'
     ],
-    specifications: new Map([
-      ['Material', 'Aluminum, Plastic'],
-      ['Dimensions', '7 x 2.5 x 1.5 inches'],
-      ['Weight', '5.5 ounces'],
-      ['Color', 'Red'],
-      ['Country of Origin', 'Switzerland']
-    ]),
+    specifications: {
+      'Material': 'Aluminum, Plastic',
+      'Dimensions': '7 x 2.5 x 1.5 inches',
+      'Weight': '5.5 ounces',
+      'Color': 'Red',
+      'Country of Origin': 'Switzerland'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B07QL9P493',
     origin: {
       source: 'amazon_pa_api',
@@ -468,13 +468,13 @@ const garlicPressProducts = [
       'Dishwasher safe',
       'Stylish red design'
     ],
-    specifications: new Map([
-      ['Material', 'Aluminum, Plastic'],
-      ['Dimensions', '7 x 2.5 x 1.5 inches'],
-      ['Weight', '5 ounces'],
-      ['Color', 'Red'],
-      ['Country of Origin', 'Switzerland']
-    ]),
+    specifications: {
+      'Material': 'Aluminum, Plastic',
+      'Dimensions': '7 x 2.5 x 1.5 inches',
+      'Weight': '5 ounces',
+      'Color': 'Red',
+      'Country of Origin': 'Switzerland'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B00CBM6K9K',
     origin: {
       source: 'amazon_pa_api',
@@ -505,12 +505,12 @@ const garlicPressProducts = [
       'No need to touch garlic',
       'Easy to clean'
     ],
-    specifications: new Map([
-      ['Material', 'Stainless Steel'],
-      ['Dimensions', '5.5 x 2.4 x 1.2 inches'],
-      ['Weight', '4.8 ounces'],
-      ['Country of Origin', 'China']
-    ]),
+    specifications: {
+      'Material': 'Stainless Steel',
+      'Dimensions': '5.5 x 2.4 x 1.2 inches',
+      'Weight': '4.8 ounces',
+      'Country of Origin': 'China'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B01ATV4O2O',
     origin: {
       source: 'amazon_pa_api',
@@ -541,13 +541,13 @@ const garlicPressProducts = [
       'Easy to use',
       'Hand wash recommended'
     ],
-    specifications: new Map([
-      ['Material', 'Aluminum Alloy'],
-      ['Dimensions', '7.5 x 2.5 x 1.5 inches'],
-      ['Weight', '5 ounces'],
-      ['Color', 'Silver'],
-      ['Country of Origin', 'China']
-    ]),
+    specifications: {
+      'Material': 'Aluminum Alloy',
+      'Dimensions': '7.5 x 2.5 x 1.5 inches',
+      'Weight': '5 ounces',
+      'Color': 'Silver',
+      'Country of Origin': 'China'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B000LNRPC2',
     origin: {
       source: 'amazon_pa_api',
@@ -578,13 +578,13 @@ const garlicPressProducts = [
       'Includes cleaning tool',
       'Dishwasher safe'
     ],
-    specifications: new Map([
-      ['Material', 'Stainless Steel'],
-      ['Dimensions', '7.8 x 2.6 x 1.6 inches'],
-      ['Weight', '8 ounces'],
-      ['Color', 'Silver'],
-      ['Country of Origin', 'China']
-    ]),
+    specifications: {
+      'Material': 'Stainless Steel',
+      'Dimensions': '7.8 x 2.6 x 1.6 inches',
+      'Weight': '8 ounces',
+      'Color': 'Silver',
+      'Country of Origin': 'China'
+    },
     amazonUrl: 'https://www.amazon.com/dp/B00HHLNRVE',
     origin: {
       source: 'amazon_pa_api',
