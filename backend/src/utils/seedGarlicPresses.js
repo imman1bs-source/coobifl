@@ -34,7 +34,8 @@ const garlicPressProducts = [
     specifications: new Map([
       ['Material', '304 Stainless Steel'],
       ['Dimensions', '7.5 x 2.5 x 1.5 inches'],
-      ['Weight', '7.2 ounces']
+      ['Weight', '7.2 ounces'],
+      ['Country of Origin', 'China']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B00I937QEI',
     origin: {
@@ -69,7 +70,8 @@ const garlicPressProducts = [
     specifications: new Map([
       ['Material', 'Chrome-Plated Zinc'],
       ['Dimensions', '8.5 x 3 x 2 inches'],
-      ['Weight', '10 ounces']
+      ['Weight', '10 ounces'],
+      ['Country of Origin', 'Australia']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B007ADJ4JI',
     origin: {
@@ -104,7 +106,8 @@ const garlicPressProducts = [
     specifications: new Map([
       ['Material', 'Stainless Steel'],
       ['Dimensions', '7 x 2.5 x 1.5 inches'],
-      ['Weight', '9 ounces']
+      ['Weight', '9 ounces'],
+      ['Country of Origin', 'Switzerland']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B08W5DJ3B9',
     origin: {
@@ -139,7 +142,8 @@ const garlicPressProducts = [
     specifications: new Map([
       ['Material', 'Stainless Steel'],
       ['Dimensions', '7.5 x 3 x 2 inches'],
-      ['Weight', '7.5 ounces']
+      ['Weight', '7.5 ounces'],
+      ['Country of Origin', 'China']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B09QBDRCRK',
     origin: {
@@ -174,7 +178,8 @@ const garlicPressProducts = [
     specifications: new Map([
       ['Material', 'Die-Cast Aluminum'],
       ['Dimensions', '7.75 x 2.75 x 1.5 inches'],
-      ['Weight', '6 ounces']
+      ['Weight', '6 ounces'],
+      ['Country of Origin', 'Switzerland']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B007D3V00Q',
     origin: {
@@ -209,7 +214,8 @@ const garlicPressProducts = [
     specifications: new Map([
       ['Material', 'Stainless Steel'],
       ['Dimensions', '7.3 x 2.4 x 1.6 inches'],
-      ['Weight', '6.5 ounces']
+      ['Weight', '6.5 ounces'],
+      ['Country of Origin', 'China']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B07N7KFHVH',
     origin: {
@@ -245,7 +251,8 @@ const garlicPressProducts = [
       ['Material', 'Chrome-Plated Zinc'],
       ['Dimensions', '8.5 x 3 x 2 inches'],
       ['Weight', '10 ounces'],
-      ['Color', 'Green']
+      ['Color', 'Green'],
+      ['Country of Origin', 'Australia']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B06Y4F2MK4',
     origin: {
@@ -281,7 +288,8 @@ const garlicPressProducts = [
       ['Material', 'Chrome-Plated Zinc'],
       ['Dimensions', '8.5 x 3 x 2 inches'],
       ['Weight', '10 ounces'],
-      ['Color', 'Red']
+      ['Color', 'Red'],
+      ['Country of Origin', 'Australia']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B00XCSLO1Q',
     origin: {
@@ -317,7 +325,8 @@ const garlicPressProducts = [
       ['Material', 'Die-Cast Zinc'],
       ['Dimensions', '7.5 x 3 x 2 inches'],
       ['Weight', '8 ounces'],
-      ['Color', 'Black']
+      ['Color', 'Black'],
+      ['Country of Origin', 'China']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B00HEZ888K',
     origin: {
@@ -352,7 +361,8 @@ const garlicPressProducts = [
     specifications: new Map([
       ['Material', 'Stainless Steel'],
       ['Dimensions', '7 x 2.5 x 1.5 inches'],
-      ['Weight', '7 ounces']
+      ['Weight', '7 ounces'],
+      ['Country of Origin', 'China']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B016KMPVOQ',
     origin: {
@@ -388,7 +398,8 @@ const garlicPressProducts = [
       ['Material', 'Aluminum, Plastic'],
       ['Dimensions', '7 x 2.5 x 1.5 inches'],
       ['Weight', '5.5 ounces'],
-      ['Color', 'Green']
+      ['Color', 'Green'],
+      ['Country of Origin', 'Switzerland']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B00CS9BZNM',
     origin: {
@@ -424,7 +435,8 @@ const garlicPressProducts = [
       ['Material', 'Aluminum, Plastic'],
       ['Dimensions', '7 x 2.5 x 1.5 inches'],
       ['Weight', '5.5 ounces'],
-      ['Color', 'Red']
+      ['Color', 'Red'],
+      ['Country of Origin', 'Switzerland']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B07QL9P493',
     origin: {
@@ -460,7 +472,8 @@ const garlicPressProducts = [
       ['Material', 'Aluminum, Plastic'],
       ['Dimensions', '7 x 2.5 x 1.5 inches'],
       ['Weight', '5 ounces'],
-      ['Color', 'Red']
+      ['Color', 'Red'],
+      ['Country of Origin', 'Switzerland']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B00CBM6K9K',
     origin: {
@@ -495,7 +508,8 @@ const garlicPressProducts = [
     specifications: new Map([
       ['Material', 'Stainless Steel'],
       ['Dimensions', '5.5 x 2.4 x 1.2 inches'],
-      ['Weight', '4.8 ounces']
+      ['Weight', '4.8 ounces'],
+      ['Country of Origin', 'China']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B01ATV4O2O',
     origin: {
@@ -531,7 +545,8 @@ const garlicPressProducts = [
       ['Material', 'Aluminum Alloy'],
       ['Dimensions', '7.5 x 2.5 x 1.5 inches'],
       ['Weight', '5 ounces'],
-      ['Color', 'Silver']
+      ['Color', 'Silver'],
+      ['Country of Origin', 'China']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B000LNRPC2',
     origin: {
@@ -567,7 +582,8 @@ const garlicPressProducts = [
       ['Material', 'Stainless Steel'],
       ['Dimensions', '7.8 x 2.6 x 1.6 inches'],
       ['Weight', '8 ounces'],
-      ['Color', 'Silver']
+      ['Color', 'Silver'],
+      ['Country of Origin', 'China']
     ]),
     amazonUrl: 'https://www.amazon.com/dp/B00HHLNRVE',
     origin: {
