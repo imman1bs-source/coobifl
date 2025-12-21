@@ -17,8 +17,7 @@ const connectDB = async () => {
       autoIndex: false, // Don't build indexes automatically to save disk space
       retryWrites: true,
       w: 'majority',
-      heartbeatFrequencyMS: 10000, // Check connection health every 10s
-      serverSelectionRetryMS: 5000
+      heartbeatFrequencyMS: 10000 // Check connection health every 10s
     };
 
     const conn = await mongoose.connect(config.MONGODB_URI, options);
