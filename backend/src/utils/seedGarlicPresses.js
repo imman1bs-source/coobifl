@@ -17,8 +17,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B00I937QEI.jpg',
-      variants: ['/images/products/B00I937QEI.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B00I937QEI.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B00I937QEI.jpg']
     },
     rating: { average: 4.7, count: 12589 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -52,8 +52,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B007ADJ4JI.jpg',
-      variants: ['/images/products/B007ADJ4JI.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B007ADJ4JI.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B007ADJ4JI.jpg']
     },
     rating: { average: 4.8, count: 8934 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -87,8 +87,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B08W5DJ3B9.jpg',
-      variants: ['/images/products/B08W5DJ3B9.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B08W5DJ3B9.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B08W5DJ3B9.jpg']
     },
     rating: { average: 4.8, count: 1523 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -122,8 +122,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B09QBDRCRK.jpg',
-      variants: ['/images/products/B09QBDRCRK.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B09QBDRCRK.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B09QBDRCRK.jpg']
     },
     rating: { average: 4.6, count: 5678 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -157,8 +157,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B007D3V00Q.jpg',
-      variants: ['/images/products/B007D3V00Q.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B007D3V00Q.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B007D3V00Q.jpg']
     },
     rating: { average: 4.5, count: 2156 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -192,8 +192,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B07N7KFHVH.jpg',
-      variants: ['/images/products/B07N7KFHVH.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B07N7KFHVH.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B07N7KFHVH.jpg']
     },
     rating: { average: 4.6, count: 8234 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -227,8 +227,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B06Y4F2MK4.jpg',
-      variants: ['/images/products/B06Y4F2MK4.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B06Y4F2MK4.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B06Y4F2MK4.jpg']
     },
     rating: { average: 4.9, count: 7234 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -263,8 +263,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B00XCSLO1Q.jpg',
-      variants: ['/images/products/B00XCSLO1Q.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B00XCSLO1Q.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B00XCSLO1Q.jpg']
     },
     rating: { average: 4.8, count: 6543 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -299,8 +299,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B00HEZ888K.jpg',
-      variants: ['/images/products/B00HEZ888K.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B00HEZ888K.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B00HEZ888K.jpg']
     },
     rating: { average: 4.6, count: 9876 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -335,8 +335,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B016KMPVOQ.jpg',
-      variants: ['/images/products/B016KMPVOQ.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B016KMPVOQ.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B016KMPVOQ.jpg']
     },
     rating: { average: 4.5, count: 4321 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -370,8 +370,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B00CS9BZNM.jpg',
-      variants: ['/images/products/B00CS9BZNM.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B00CS9BZNM.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B00CS9BZNM.jpg']
     },
     rating: { average: 4.7, count: 3456 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -406,8 +406,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B07QL9P493.jpg',
-      variants: ['/images/products/B07QL9P493.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B07QL9P493.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B07QL9P493.jpg']
     },
     rating: { average: 4.7, count: 2987 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -442,8 +442,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B00CBM6K9K.jpg',
-      variants: ['/images/products/B00CBM6K9K.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B00CBM6K9K.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B00CBM6K9K.jpg']
     },
     rating: { average: 4.6, count: 4123 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -478,8 +478,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B01ATV4O2O.jpg',
-      variants: ['/images/products/B01ATV4O2O.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B01ATV4O2O.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B01ATV4O2O.jpg']
     },
     rating: { average: 4.5, count: 3247 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -513,8 +513,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B000LNRPC2.jpg',
-      variants: ['/images/products/B000LNRPC2.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B000LNRPC2.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B000LNRPC2.jpg']
     },
     rating: { average: 4.3, count: 2876 },
     availability: { status: 'in_stock', message: 'In Stock' },
@@ -549,8 +549,8 @@ const garlicPressProducts = [
     category: 'Home & Kitchen',
     subcategory: 'Garlic Presses',
     images: {
-      primary: '/images/products/B00GM3IKR4.jpg',
-      variants: ['/images/products/B00GM3IKR4.jpg']
+      primary: 'https://ross.coobifl.com/images/products/B00GM3IKR4.jpg',
+      variants: ['https://ross.coobifl.com/images/products/B00GM3IKR4.jpg']
     },
     rating: { average: 4.7, count: 4567 },
     availability: { status: 'in_stock', message: 'In Stock' },
