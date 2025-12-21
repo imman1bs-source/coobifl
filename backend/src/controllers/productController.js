@@ -587,3 +587,37 @@ exports.updateProductImages = async (req, res, next) => {
     next(error);
   }
 };
+
+
+/**
+ * Restore original Amazon CDN images from seed data
+ * POST /api/restore-images
+ */
+exports.restoreOriginalImages = async (req, res, next) => {
+  try {
+    const Product = require('../models/Product');
+    const seedProducts = require('../utils/seedGarlicPresses');
+
+    let updated = 0;
+    const dbProducts = await Product.find({});
+
+    for (const dbProduct of dbProducts) {
+      const seedProduct = seedProducts.find(sp => sp.asin === dbProduct.asin);
+
+      if (seedProduct && seedProduct.images) {
+        dbProduct.images = seedProduct.images;
+        await dbProduct.save();
+        updated++;
+      }
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Original Amazon CDN images restored successfully',
+      updated: updated,
+      total: dbProducts.length
+    });
+  } catch (error) {
+    next(error);
+  }
+};

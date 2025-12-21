@@ -25,4 +25,7 @@ router.post('/seed', productController.seedDatabase);
 // Update product images to Amazon widget URLs
 router.post('/update-images', productController.updateProductImages);
 
+// Restore original Amazon CDN images from seed data
+router.post('/restore-images', productController.restoreOriginalImages);
+
 module.exports = router;
