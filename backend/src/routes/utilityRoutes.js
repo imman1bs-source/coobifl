@@ -16,6 +16,16 @@ router.get('/brands', productController.getBrands);
 // Get database statistics
 router.get('/stats', productController.getStats);
 
+// Check environment variables (temporary debug endpoint)
+router.get('/env-check', (req, res) => {
+  res.json({
+    hasSerpApiKey: !!process.env.SERPAPI_KEY,
+    serpApiKeyLength: process.env.SERPAPI_KEY ? process.env.SERPAPI_KEY.length : 0,
+    nodeEnv: process.env.NODE_ENV,
+    envVarsCount: Object.keys(process.env).length
+  });
+});
+
 // Create database indexes
 router.post('/create-indexes', productController.createIndexes);
 
