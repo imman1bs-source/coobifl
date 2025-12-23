@@ -104,11 +104,12 @@ syncScheduler.start();
 
 // Start server
 const PORT = config.PORT;
+const HOST = '0.0.0.0'; // Bind to all network interfaces for Railway
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
   console.log('===========================================');
   console.log(`🚀 Server running in ${config.NODE_ENV} mode`);
-  console.log(`📡 Listening on port ${PORT}`);
+  console.log(`📡 Listening on ${HOST}:${PORT}`);
   console.log(`🔗 API URL: http://localhost:${PORT}/api`);
   console.log(`💚 Health check: http://localhost:${PORT}/health`);
   console.log('===========================================');
