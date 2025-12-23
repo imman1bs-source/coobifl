@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Coobifl - Product Origin Tracker",
   "scripts": {
-    "start": "node backend/src/app.js",
+    "start": "node backend/scripts/importProductsToProduction.js && node backend/src/app.js",
     "build": "cd backend && npm install --production"
   },
   "engines": {
