@@ -3,6 +3,6 @@ builder = "nixpacks"
 buildCommand = "npm run build"
 
 [deploy]
-startCommand = "npm start"
+startCommand = "sh start-with-import.sh"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 10
