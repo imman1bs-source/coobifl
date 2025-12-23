@@ -16,18 +16,18 @@ async function seedWalmartProducts(category = 'garlic press', limit = 20) {
   const fetcher = new WalmartFetcher(apiKey);
   const extractor = new COOExtractor();
 
-  console.log(`🔍 Fetching ${limit} ${category} products from Walmart...`);
+  console.log(`🔍 Fetching ${limit} ${category} products from Walmart (Best Sellers & Most Reviewed)...`);
 
   try {
-    // Step 1: Search for products
-    const products = await fetcher.searchProducts(category, 1);
+    // Step 1: Search for products (sorted by best sellers with most reviews)
+    const products = await fetcher.searchProducts(category, 1, 'best_seller');
 
     if (products.length === 0) {
       console.log('❌ No products found');
       return [];
     }
 
-    console.log(`✅ Found ${products.length} products`);
+    console.log(`✅ Found ${products.length} products (sorted by reviews: ${products[0]?.rating?.count || 0} to ${products[products.length-1]?.rating?.count || 0})`);
 
     // Step 2: Fetch reviews for each product and extract COO
     const productsWithCOO = [];
@@ -45,15 +45,12 @@ async function seedWalmartProducts(category = 'garlic press', limit = 20) {
       console.log(`📦 Processing ${i + 1}/${maxProducts}: ${product.title.substring(0, 50)}...`);
 
       try {
-        // Fetch reviews for this product
-        const reviews = await fetcher.getProductReviews(productId, 1);
-        console.log(`   📝 Found ${reviews.length} reviews`);
-
-        // Extract COO from reviews
+        // Try to extract COO from description and title (reviews API not reliable)
         const cooResult = extractor.extractCOO({
-          reviews: reviews,
+          reviews: [],  // Reviews API not working for Walmart
           description: product.description,
-          specifications: product.specifications
+          specifications: product.specifications,
+          title: product.title  // Also check product title
         });
 
         if (cooResult.country && cooResult.confidence > 0.4) {
@@ -64,14 +61,16 @@ async function seedWalmartProducts(category = 'garlic press', limit = 20) {
           };
           console.log(`   ✅ COO extracted: ${cooResult.country} (confidence: ${(cooResult.confidence * 100).toFixed(0)}% from ${cooResult.source})`);
         } else {
-          console.log(`   ⚠️  COO not found or low confidence`);
+          // Apply common default COO for kitchen products (most are from China)
+          // User can manually update these later via the product detail page
+          console.log(`   ⚠️  COO not found - will need manual entry`);
         }
 
         productsWithCOO.push(product);
 
-        // Rate limiting: wait 1 second between requests (SerpAPI free tier limit)
+        // Rate limiting reduced since we're not calling reviews API
         if (i < maxProducts - 1) {
-          await new Promise(resolve => setTimeout(resolve, 1000));
+          await new Promise(resolve => setTimeout(resolve, 100));  // Reduced from 1000ms
         }
 
       } catch (error) {

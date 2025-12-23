@@ -3,7 +3,7 @@ const fs = require('fs');
 
 // Only load .env file in development (Railway provides env vars in production)
 if (process.env.NODE_ENV !== 'production') {
-  const envFile = path.join(__dirname, '../../../.env');
+  const envFile = path.join(__dirname, '../../.env');
 
   if (fs.existsSync(envFile)) {
     require('dotenv').config({ path: envFile });

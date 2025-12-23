@@ -220,6 +220,22 @@
             box-shadow: 0 6px 16px rgba(255, 153, 0, 0.4);
             color: white;
         }
+        .walmart-btn {
+            background: linear-gradient(135deg, #0071ce 0%, #004f9a 100%);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 113, 206, 0.3);
+        }
+        .walmart-btn:hover {
+            background: linear-gradient(135deg, #004f9a 0%, #003d7a 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 113, 206, 0.4);
+            color: white;
+        }
         /* Modal styles for editing */
         .modal-content {
             border-radius: 12px;
@@ -411,6 +427,16 @@
                     <div class="mt-4">
                         <a href="${product.amazonUrl}" target="_blank" class="btn amazon-btn w-100">
                             <i class="fab fa-amazon"></i> View on Amazon
+                        </a>
+                    </div>
+                `;
+            }
+
+            if (product.walmartUrl) {
+                infoHTML += `
+                    <div class="mt-4">
+                        <a href="${product.walmartUrl}" target="_blank" class="btn walmart-btn w-100">
+                            <i class="fas fa-shopping-cart"></i> Buy on Walmart
                         </a>
                     </div>
                 `;

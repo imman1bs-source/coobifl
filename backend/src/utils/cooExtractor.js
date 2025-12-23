@@ -44,10 +44,10 @@ class COOExtractor {
 
   /**
    * Extract COO from multiple sources
-   * @param {Object} options - { reviews, description, specifications }
+   * @param {Object} options - { reviews, description, specifications, title }
    * @returns {Object} { country, confidence, source }
    */
-  extractCOO({ reviews = [], description = '', specifications = {} }) {
+  extractCOO({ reviews = [], description = '', specifications = {}, title = '' }) {
     const results = [];
 
     // 1. Check specifications first (highest confidence)
@@ -56,13 +56,19 @@ class COOExtractor {
       results.push({ country: specCOO, confidence: 0.95, source: 'specifications' });
     }
 
-    // 2. Check product description
+    // 2. Check product title
+    const titleCOO = this.extractFromText(title);
+    if (titleCOO.country) {
+      results.push({ ...titleCOO, confidence: titleCOO.confidence * 0.9, source: 'title' });
+    }
+
+    // 3. Check product description
     const descCOO = this.extractFromText(description);
     if (descCOO.country) {
       results.push({ ...descCOO, source: 'description' });
     }
 
-    // 3. Check reviews (aggregate multiple mentions)
+    // 4. Check reviews (aggregate multiple mentions)
     const reviewCOO = this.extractFromReviews(reviews);
     if (reviewCOO.country) {
       results.push({ ...reviewCOO, source: 'reviews' });

@@ -14,14 +14,16 @@ class WalmartFetcher {
    * Search Walmart products by query
    * @param {string} query - Search query (e.g., "garlic press")
    * @param {number} page - Page number (default: 1)
+   * @param {string} sort - Sort order: 'best_seller', 'best_match', 'price_low', 'price_high', 'rating_high'
    * @returns {Promise<Array>} Array of product objects
    */
-  async searchProducts(query, page = 1) {
+  async searchProducts(query, page = 1, sort = 'best_seller') {
     try {
       const params = {
         engine: 'walmart',
         query: query,
         page: page,
+        sort_by: sort,
         api_key: this.apiKey
       };
 
@@ -31,8 +33,13 @@ class WalmartFetcher {
         return [];
       }
 
-      // Transform SerpAPI response to our product format
-      return response.organic_results.map(product => this.transformProduct(product));
+      // Filter and sort by review count to get most reviewed products
+      let products = response.organic_results.map(product => this.transformProduct(product));
+
+      // Sort by review count (most reviewed first)
+      products.sort((a, b) => (b.rating?.count || 0) - (a.rating?.count || 0));
+
+      return products;
     } catch (error) {
       console.error('Error fetching Walmart products:', error);
       throw error;
@@ -113,7 +120,7 @@ class WalmartFetcher {
 
       rating: {
         average: product.rating || 0,
-        count: product.reviews_count || product.rating_count || 0
+        count: product.reviews || product.reviews_count || product.rating_count || 0
       },
 
       availability: {

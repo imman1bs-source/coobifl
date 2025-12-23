@@ -569,15 +569,37 @@ exports.seedWalmartProducts = async (req, res, next) => {
       products = await seedWalmartProducts(category, limit);
     }
 
-    // Insert products into database (without clearing existing ones)
-    const insertedProducts = await Product.insertMany(products);
+    // Insert products into database, skipping duplicates
+    let inserted = 0;
+    let skipped = 0;
+
+    for (const product of products) {
+      try {
+        // Check if product with this ASIN already exists
+        const existing = await Product.findOne({ asin: product.asin });
+
+        if (!existing) {
+          await Product.create(product);
+          inserted++;
+        } else {
+          skipped++;
+          console.log(`⚠️  Skipped duplicate: ${product.asin} - ${product.title?.substring(0, 50)}...`);
+        }
+      } catch (error) {
+        console.error(`Error inserting product ${product.asin}:`, error.message);
+        skipped++;
+      }
+    }
+
+    console.log(`✅ Inserted ${inserted} new products, skipped ${skipped} duplicates`);
 
     res.status(200).json({
       success: true,
-      message: `Successfully seeded ${insertedProducts.length} Walmart products`,
-      inserted: insertedProducts.length,
+      message: `Successfully seeded ${inserted} Walmart products (${skipped} duplicates skipped)`,
+      inserted: inserted,
+      skipped: skipped,
       method: manual || !process.env.SERPAPI_KEY ? 'manual' : 'api',
-      productsWithCOO: insertedProducts.filter(p => p.specifications?.['Country of Origin']).length
+      productsWithCOO: products.filter(p => p.specifications?.['Country of Origin']).length
     });
   } catch (error) {
     console.error('Error seeding Walmart products:', error);

@@ -105,12 +105,13 @@ const productSchema = new mongoose.Schema({
   },
 
   amazonUrl: String,
+  walmartUrl: String,
 
   // Origin tracking
   origin: {
     source: {
       type: String,
-      enum: ['amazon_pa_api', 'manual_import', 'csv_upload', 'scraper', 'crowd_sourced', 'other'],
+      enum: ['amazon_pa_api', 'walmart', 'manual_import', 'csv_upload', 'scraper', 'crowd_sourced', 'other'],
       required: true,
       default: 'amazon_pa_api',
       index: true
