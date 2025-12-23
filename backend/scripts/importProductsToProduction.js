@@ -109,10 +109,9 @@ async function importProducts() {
 
     await mongoose.connection.close();
     console.log('\n✅ Done!');
-    process.exit(0);
   } catch (error) {
     console.error('❌ Error:', error);
-    process.exit(1);
+    throw error;
   }
 }
 
