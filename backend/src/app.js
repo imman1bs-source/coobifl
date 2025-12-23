@@ -11,6 +11,9 @@ const config = require('./config/environment');
 // Initialize Express app
 const app = express();
 
+// Trust Railway proxy for accurate client IP detection
+app.set('trust proxy', true);
+
 // Connect to MongoDB
 connectDB();
 
