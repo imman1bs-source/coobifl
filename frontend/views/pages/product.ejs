@@ -377,7 +377,7 @@
 
             // Use local image for Amazon products, Walmart images from API
             let image;
-            if (product.asin && product.asin.startsWith('B')) {
+            if (product.origin?.source === 'amazon_pa_api' || (product.asin && product.asin.startsWith('B'))) {
                 // Amazon product - use local image
                 image = `/images/products/${product.asin}.jpg`;
             } else {
@@ -567,7 +567,7 @@
                 const html = similarProducts.map(product => {
                     // Use local image for Amazon products, Walmart images from API
                     let image;
-                    if (product.asin && product.asin.startsWith('B')) {
+                    if (product.origin?.source === 'amazon_pa_api' || (product.asin && product.asin.startsWith('B'))) {
                         // Amazon product - use local image
                         image = `/images/products/${product.asin}.jpg`;
                     } else {
