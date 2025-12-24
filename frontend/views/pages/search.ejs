@@ -15,18 +15,18 @@
         }
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
             margin-bottom: 2rem;
         }
         @media (max-width: 1400px) {
             .product-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
             }
         }
         @media (max-width: 992px) {
             .product-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
         }
         @media (max-width: 768px) {
@@ -122,7 +122,7 @@
         </section>
 
         <!-- Results Section -->
-        <section class="container">
+        <section class="container" style="max-width: 1400px;">
             <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
                 <h5 class="mb-0">
                     <% if (query) { %>
@@ -243,7 +243,16 @@
             const price = product.price?.displayPrice || `$${product.price?.amount || 0}`;
             const rating = product.rating?.average || 0;
             const reviewCount = product.rating?.count || 0;
-            const image = product.images?.primary || 'https://via.placeholder.com/200x200?text=No+Image';
+
+            // Use local image for Amazon products, Walmart images from API
+            let image;
+            if (product.asin && product.asin.startsWith('B')) {
+                // Amazon product - use local image
+                image = `/images/products/${product.asin}.jpg`;
+            } else {
+                // Walmart or other - use API image
+                image = product.images?.primary || 'https://via.placeholder.com/200x200?text=No+Image';
+            }
 
             // Get country of origin from specifications
             const specs = product.specifications || {};

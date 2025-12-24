@@ -295,7 +295,7 @@
         </div>
 
         <!-- Product Details -->
-        <div id="product-container" class="container py-4" style="display: none;">
+        <div id="product-container" class="container py-4" style="display: none; max-width: 1400px;">
             <div class="row g-4">
                 <!-- LEFT COLUMN: Product Image + Similar Products -->
                 <div class="col-md-4">
@@ -374,7 +374,16 @@
             const price = product.price?.displayPrice || `$${product.price?.amount || 0}`;
             const rating = product.rating?.average || 0;
             const reviewCount = product.rating?.count || 0;
-            const image = product.images?.primary || 'https://via.placeholder.com/350x350?text=No+Image';
+
+            // Use local image for Amazon products, Walmart images from API
+            let image;
+            if (product.asin && product.asin.startsWith('B')) {
+                // Amazon product - use local image
+                image = `/images/products/${product.asin}.jpg`;
+            } else {
+                // Walmart or other - use API image
+                image = product.images?.primary || 'https://via.placeholder.com/350x350?text=No+Image';
+            }
 
             // Display main image
             document.getElementById('main-image-container').innerHTML = `
@@ -556,7 +565,15 @@
                 }
 
                 const html = similarProducts.map(product => {
-                    const image = product.images?.primary || 'https://via.placeholder.com/180x140?text=No+Image';
+                    // Use local image for Amazon products, Walmart images from API
+                    let image;
+                    if (product.asin && product.asin.startsWith('B')) {
+                        // Amazon product - use local image
+                        image = `/images/products/${product.asin}.jpg`;
+                    } else {
+                        // Walmart or other - use API image
+                        image = product.images?.primary || 'https://via.placeholder.com/180x140?text=No+Image';
+                    }
                     const price = product.price?.displayPrice || `$${product.price?.amount || 0}`;
                     const rating = product.rating?.average || 0;
 
