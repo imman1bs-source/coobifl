@@ -67,23 +67,20 @@ async function importProducts() {
         // Remove _id and __v to avoid conflicts
         const { _id, __v, createdAt, updatedAt, ...cleanData } = productData;
 
-        // Try to update if exists, otherwise create
-        const result = await Product.updateOne(
-          { asin: cleanData.asin },
-          { $set: cleanData },
-          { upsert: true }
-        );
+        // Check if product already exists
+        const existing = await Product.findOne({ asin: cleanData.asin });
 
-        if (result.upsertedCount > 0) {
-          imported++;
-        } else if (result.modifiedCount > 0) {
-          updated++;
-        } else {
+        if (existing) {
+          // Product exists - skip it (don't update)
           skipped++;
+        } else {
+          // Product doesn't exist - create new one
+          await Product.create(cleanData);
+          imported++;
         }
 
-        if ((imported + updated + skipped) % 10 === 0) {
-          process.stdout.write(`  Progress: ${imported + updated + skipped}/${productsData.length}\r`);
+        if ((imported + skipped) % 10 === 0) {
+          process.stdout.write(`  Progress: ${imported + skipped}/${productsData.length}\r`);
         }
       } catch (error) {
         console.error(`\n❌ Error importing product ${productData.asin}:`, error.message);
@@ -93,8 +90,7 @@ async function importProducts() {
     console.log(`\n\n✅ Import complete!`);
     console.log(`\n📊 Summary:`);
     console.log(`   New products imported: ${imported}`);
-    console.log(`   Existing products updated: ${updated}`);
-    console.log(`   Products skipped: ${skipped}`);
+    console.log(`   Existing products skipped (not updated): ${skipped}`);
     console.log(`   Total in database: ${await Product.countDocuments()}`);
 
     // Verify
