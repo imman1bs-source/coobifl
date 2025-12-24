@@ -141,6 +141,102 @@ node scripts/exportProductsToJSON.js  # Export from local MongoDB
 ### Environment Variables (Local)
 Backend uses `.env` file in development mode (see `backend/src/config/environment.js`)
 
+## Vercel Frontend Configuration
+
+### CRITICAL: Environment Variables (Vercel Dashboard)
+
+The frontend at https://ross.coobifl.com needs environment variables set in Vercel dashboard:
+
+**In Vercel Dashboard → Settings → Environment Variables:**
+
+1. **API_BASE_URL**: `https://coobifl-production.up.railway.app/api`
+   - REQUIRED for frontend to connect to Railway backend
+   - Set for: Production (and optionally Preview/Development)
+   - Without this, frontend will try to connect to localhost and fail
+
+**After adding/changing variables:**
+- Go to Vercel → Deployments
+- Click three dots on latest deployment → **Redeploy**
+- This applies the new environment variables
+
+### Frontend Files
+- **Source**: `frontend/.env.production` has the correct Railway URL
+- **Important**: Vercel DOES NOT automatically use `.env.production` from repo
+- **Must manually set** environment variables in Vercel dashboard
+
+## Importing New Products to Production
+
+### IMPORTANT: Import Strategy
+The import script **only adds NEW products** - it never updates existing ones. This preserves any manual edits made to products in the database.
+
+### Step-by-Step Import Process
+
+#### 1. Prepare Product Data
+Add new products to `backend/db-export-products.json`:
+- This file contains all products in JSON format
+- Each product must have a unique `asin` field
+- Ensure all required fields are present (title, price, specifications, etc.)
+
+#### 2. For Amazon Products with Images
+If adding Amazon products that need local images:
+- Download product images as JPG files
+- Name them with the clean ASIN: `B00004OCNS.jpg` (NO affiliate tag)
+- Place in: `frontend/public/images/products/`
+- Commit images to git so Vercel deploys them
+
+#### 3. Run Import Script
+
+**Option A: Via Railway Dashboard**
+1. Go to Railway project → Backend service
+2. Click on "Settings" → "Deploy"
+3. Temporarily change start command to: `npm run start:with-import`
+4. Click "Redeploy"
+5. Wait for deployment to complete
+6. **IMPORTANT**: Change start command back to: `npm start`
+
+**Option B: Via Railway CLI** (if you have access)
+```bash
+railway run npm run start:with-import
+```
+
+**Option C: Locally** (requires direct MongoDB access)
+```bash
+MONGODB_URI="mongodb://mongo:password@mongodb.railway.internal:27017" node backend/scripts/importProductsToProduction.js
+```
+
+#### 4. Verify Import
+Check Railway logs for import summary:
+```
+📊 Summary:
+   New products imported: X
+   Existing products skipped (not updated): Y
+   Total in database: 129 (or more)
+
+✅ Verification:
+   Amazon products: 16 (or more)
+   Walmart products: 113 (or more)
+   Products with COO: 129 (or more)
+```
+
+#### 5. Deploy Frontend (if images were added)
+If you added new Amazon product images:
+1. Push images to GitHub (already done in step 2)
+2. Vercel will auto-deploy
+3. New images will be available at `/images/products/{ASIN}.jpg`
+
+### Important Notes
+- **Existing products are NEVER updated** - only new ASINs are added
+- Import script checks `asin` field to determine if product exists
+- If product exists, it's skipped entirely
+- This preserves any manual edits or corrections made to products
+- Images must be committed to git - they don't come from the import script
+
+### Files Involved
+- **Import script**: `backend/scripts/importProductsToProduction.js`
+- **Product data**: `backend/db-export-products.json`
+- **Product images**: `frontend/public/images/products/*.jpg`
+- **Product model**: `backend/src/models/Product.js`
+
 ## Future Considerations
 
 ### Before Next Deployment
