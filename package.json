@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node backend/src/app.js",
     "start:with-import": "node backend/scripts/importProductsToProduction.js && node backend/src/app.js",
+    "start:replace-amazon": "node backend/scripts/replaceAmazonProductsInProduction.js",
     "build": "cd backend && npm install --production"
   },
   "engines": {
