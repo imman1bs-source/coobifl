@@ -1,990 +1,5 @@
 [
   {
-    "_id": "6945d1f3b5e49475a481a85c",
-    "asin": "B0001WVH3I",
-    "title": "Joseph Joseph Rocker Garlic Crusher - Stainless Steel",
-    "description": "The Joseph Joseph Rocker garlic crusher features a unique rocking motion that makes crushing garlic cloves quick and easy. Made from high-quality stainless steel with a comfortable ergonomic design. Simply rock back and forth over peeled garlic cloves to crush them efficiently.",
-    "price": {
-      "amount": 14.99,
-      "currency": "USD",
-      "displayPrice": "$14.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
-      "variants": [
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
-      ]
-    },
-    "rating": {
-      "average": 4.5,
-      "count": 3247
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Joseph Joseph",
-    "features": [
-      "Unique rocking motion for easy crushing",
-      "Stainless steel construction",
-      "Ergonomic design",
-      "Dishwasher safe",
-      "No need to touch garlic"
-    ],
-    "specifications": {
-      "Material": "Stainless Steel",
-      "Dimensions": "5.5 x 2.4 x 1.2 inches",
-      "Weight": "4.8 ounces",
-      "Dishwasher Safe": "Yes",
-      "Country of Origin": "China",
-      "Materials Used": "Stainless Steel 18/10, Food-grade plastic handle",
-      "Sticker Location": "Bottom of handle grip",
-      "Manufacturing Notes": "Quality tested, BPA-free materials"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B0001WVH3I?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.692Z",
-    "updatedAt": "2025-12-23T19:06:23.824Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a85d",
-    "asin": "B00HHLNRVE",
-    "title": "Alpha Grillers Garlic Press - Stainless Steel Garlic Mincer & Crusher",
-    "description": "Heavy duty stainless steel garlic press with comfortable non-slip handles. Large chamber fits multiple cloves at once. Easy to clean with included cleaning brush. Built to last with premium materials and solid construction.",
-    "price": {
-      "amount": 18.97,
-      "currency": "USD",
-      "displayPrice": "$18.97"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1596040033229-a0b7e2a97fea?w=400&h=400&fit=crop",
-      "variants": [
-        "https://images.unsplash.com/photo-1596040033229-a0b7e2a97fea?w=400&h=400&fit=crop"
-      ]
-    },
-    "rating": {
-      "average": 4.7,
-      "count": 12589
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Alpha Grillers",
-    "features": [
-      "Heavy duty stainless steel",
-      "Non-slip handles",
-      "Large garlic chamber",
-      "Dishwasher safe",
-      "Includes cleaning brush",
-      "Lifetime warranty"
-    ],
-    "specifications": {
-      "Material": "304 Stainless Steel",
-      "Dimensions": "7.5 x 2.5 x 1.5 inches",
-      "Weight": "7.2 ounces",
-      "Warranty": "Lifetime",
-      "Country of Origin": "China",
-      "Materials Used": "304 Stainless Steel, Non-slip silicone grip",
-      "Sticker Location": "Inside handle near hinge",
-      "Manufacturing Notes": "Heavy-duty construction, FDA approved materials"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B00HHLNRVE?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.693Z",
-    "updatedAt": "2025-12-23T19:06:23.828Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a85e",
-    "asin": "B0000DJVKQ",
-    "title": "Zyliss Susi 3 Garlic Press, Soft-Touch Handle",
-    "description": "The Zyliss Susi 3 garlic press features an ergonomic design with soft-touch handles for comfortable use. Durable die-cast construction ensures years of reliable performance. Easy-clean design with removable insert.",
-    "price": {
-      "amount": 21.99,
-      "currency": "USD",
-      "displayPrice": "$21.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1585516173406-a450ab2be648?w=400&h=400&fit=crop",
-      "variants": [
-        "https://images.unsplash.com/photo-1585516173406-a450ab2be648?w=400&h=400&fit=crop"
-      ]
-    },
-    "rating": {
-      "average": 4.4,
-      "count": 2156
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Zyliss",
-    "features": [
-      "Soft-touch ergonomic handles",
-      "Die-cast aluminum construction",
-      "Removable cleaning insert",
-      "Dishwasher safe",
-      "No need to peel garlic"
-    ],
-    "specifications": {
-      "Material": "Die-Cast Aluminum",
-      "Dimensions": "7.75 x 2.75 x 1.5 inches",
-      "Weight": "6 ounces",
-      "Color": "Red/Silver",
-      "Country of Origin": "Switzerland",
-      "Materials Used": "Die-cast aluminum, TPE soft-touch handles",
-      "Sticker Location": "Bottom of product packaging",
-      "Manufacturing Notes": "Swiss quality standards, Lead-free materials"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B0000DJVKQ?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.693Z",
-    "updatedAt": "2025-12-23T19:06:23.829Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a85f",
-    "asin": "B08T1YNR3Q",
-    "title": "ORBLUE Garlic Press, Stainless Steel Mincer and Crusher",
-    "description": "Premium stainless steel garlic press with extra large chamber that can crush multiple garlic cloves at once. Ergonomic design reduces hand fatigue. Easy to clean with dishwasher safe construction.",
-    "price": {
-      "amount": 16.99,
-      "currency": "USD",
-      "displayPrice": "$16.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/71yKJV4RCZL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/81N4fZ6QzAL._AC_SL1500_.jpg",
-        "https://m.media-amazon.com/images/I/81rFQYbJ+8L._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.6,
-      "count": 8934
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "ORBLUE",
-    "features": [
-      "Extra large chamber",
-      "Premium stainless steel",
-      "Ergonomic comfortable grip",
-      "Easy squeeze handles",
-      "Includes cleaning tool",
-      "Dishwasher safe"
-    ],
-    "specifications": {
-      "Material": "Stainless Steel",
-      "Dimensions": "7.8 x 2.6 x 1.6 inches",
-      "Weight": "8 ounces",
-      "Color": "Silver",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B08T1YNR3Q?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.693Z",
-    "updatedAt": "2025-12-23T19:06:23.832Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a860",
-    "asin": "B07PHXHK6W",
-    "title": "Kuhn Rikon Epicurean Garlic Press, Stainless Steel",
-    "description": "Swiss-made garlic press with superior crushing power. Precision-engineered mechanism provides maximum leverage with minimum effort. Self-cleaning feature makes cleanup a breeze.",
-    "price": {
-      "amount": 24.95,
-      "currency": "USD",
-      "displayPrice": "$24.95"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/61GqK8kxOyL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/71J8sYZDm3L._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 1523
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Kuhn Rikon",
-    "features": [
-      "Swiss precision engineering",
-      "Self-cleaning mechanism",
-      "Maximum leverage design",
-      "Premium stainless steel",
-      "Ergonomic handles",
-      "5-year warranty"
-    ],
-    "specifications": {
-      "Material": "Stainless Steel",
-      "Dimensions": "7 x 2.5 x 1.5 inches",
-      "Weight": "9 ounces",
-      "Country of Origin": "Switzerland"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B07PHXHK6W?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.693Z",
-    "updatedAt": "2025-12-23T19:06:23.834Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a861",
-    "asin": "B09VLKJ2M3",
-    "title": "OXO Good Grips Soft-Handled Garlic Press",
-    "description": "Features a large-capacity hopper that makes quick work of multiple cloves. Efficient hole pattern extracts maximum garlic with minimal waste. Soft, comfortable, non-slip handles absorb pressure while you squeeze.",
-    "price": {
-      "amount": 19.99,
-      "currency": "USD",
-      "displayPrice": "$19.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/61bkYXGqRxL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/71UmqGvtg2L._AC_SL1500_.jpg",
-        "https://m.media-amazon.com/images/I/71L8cNqNp6L._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.5,
-      "count": 5678
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "OXO",
-    "features": [
-      "Large capacity hopper",
-      "Soft non-slip handles",
-      "Efficient hole pattern",
-      "Built-in cleaner",
-      "Dishwasher safe",
-      "No need to peel garlic"
-    ],
-    "specifications": {
-      "Material": "Zinc Alloy, Stainless Steel",
-      "Dimensions": "7.5 x 3 x 2 inches",
-      "Weight": "7.5 ounces",
-      "Color": "Black/Silver",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B09VLKJ2M3?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.693Z",
-    "updatedAt": "2025-12-23T19:06:23.835Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a862",
-    "asin": "B0BQT56LMN",
-    "title": "Dreamfarm Garject - Self-Cleaning Garlic Press",
-    "description": "Revolutionary garlic press automatically ejects garlic peels and features a built-in scraper that cleans the holes with a simple squeeze. Premium construction and innovative design make this the last garlic press you will ever need.",
-    "price": {
-      "amount": 29.95,
-      "currency": "USD",
-      "displayPrice": "$29.95"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/71nXdH8JDBL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/81t7hQzKNML._AC_SL1500_.jpg",
-        "https://m.media-amazon.com/images/I/71vKqYZD7BL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.9,
-      "count": 2341
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Dreamfarm",
-    "features": [
-      "Auto-eject peel mechanism",
-      "Built-in self-cleaning scraper",
-      "No need to peel garlic",
-      "Premium die-cast construction",
-      "Ergonomic easy-squeeze handles",
-      "Dishwasher safe"
-    ],
-    "specifications": {
-      "Material": "Die-Cast Zinc Alloy",
-      "Dimensions": "8.5 x 3 x 2 inches",
-      "Weight": "10 ounces",
-      "Color": "Green/Black",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B0BQT56LMN?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.693Z",
-    "updatedAt": "2025-12-23T19:06:23.836Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a863",
-    "asin": "B0756YKBZS",
-    "title": "Microplane Professional Garlic Press - Heavy Duty Stainless Steel",
-    "description": "Professional-grade garlic press from the makers of the original Microplane grater. Ultra-sharp holes produce finely minced garlic. Heavy-duty construction stands up to commercial kitchen use.",
-    "price": {
-      "amount": 22.5,
-      "currency": "USD",
-      "displayPrice": "$22.50"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/61vPmqwxvNL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/71T9LqmKwbL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.6,
-      "count": 1876
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Microplane",
-    "features": [
-      "Professional quality",
-      "Ultra-sharp pressing holes",
-      "Heavy-duty stainless steel",
-      "Comfortable rubber grip",
-      "Easy to clean",
-      "Dishwasher safe"
-    ],
-    "specifications": {
-      "Material": "18/8 Stainless Steel",
-      "Dimensions": "7.9 x 2.8 x 1.8 inches",
-      "Weight": "8.5 ounces",
-      "Professional Grade": "Yes",
-      "Country of Origin": "USA"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B0756YKBZS?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.693Z",
-    "updatedAt": "2025-12-23T19:06:23.837Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a864",
-    "asin": "B00004OCNS",
-    "title": "Norpro Jumbo Garlic Press - Extra Large Chamber",
-    "description": "Jumbo-sized garlic press with extra-large chamber holds multiple large cloves. Strong construction provides excellent leverage. Classic design that has been trusted for decades.",
-    "price": {
-      "amount": 13.99,
-      "currency": "USD",
-      "displayPrice": "$13.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/61S8yqG2GPL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/71hL9wDqfAL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.3,
-      "count": 4521
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Norpro",
-    "features": [
-      "Jumbo extra-large chamber",
-      "Holds multiple cloves",
-      "Strong metal construction",
-      "Good leverage design",
-      "Budget-friendly",
-      "Hand wash recommended"
-    ],
-    "specifications": {
-      "Material": "Aluminum Alloy",
-      "Dimensions": "8 x 3 x 1.5 inches",
-      "Weight": "5 ounces",
-      "Color": "Silver",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B00004OCNS?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.694Z",
-    "updatedAt": "2025-12-23T19:06:23.838Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a865",
-    "asin": "B08XYZABC1",
-    "title": "Garlic Press Rocker - Premium Stainless Steel by Chef'n",
-    "description": "Innovative rocking design eliminates squeezing effort. Simply place garlic clove underneath and rock back and forth. Ergonomic curved shape fits comfortably in hand.",
-    "price": {
-      "amount": 17.95,
-      "currency": "USD",
-      "displayPrice": "$17.95"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/61RqwEHmJEL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/71XqQhNDfPL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.4,
-      "count": 987
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Chef'n",
-    "features": [
-      "Unique rocking motion",
-      "No squeezing required",
-      "Ergonomic curved design",
-      "Stainless steel construction",
-      "Easy to clean",
-      "Space-saving design"
-    ],
-    "specifications": {
-      "Material": "Stainless Steel",
-      "Dimensions": "5 x 2.5 x 1 inches",
-      "Weight": "4 ounces",
-      "Style": "Rocker",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B08XYZABC1?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.694Z",
-    "updatedAt": "2025-12-23T19:06:23.839Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a866",
-    "asin": "B0C1GH3KLM",
-    "title": "Premium Garlic Press & Peeler Set - Stainless Steel",
-    "description": "Complete garlic preparation set includes heavy-duty garlic press and silicone garlic peeler tube. Press features large chamber and easy-squeeze handles. Peeler tube makes removing skins effortless.",
-    "price": {
-      "amount": 15.99,
-      "currency": "USD",
-      "displayPrice": "$15.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/71kMnOqYPZL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/81PqRsXvYTL._AC_SL1500_.jpg",
-        "https://m.media-amazon.com/images/I/71NmQtVxGBL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.5,
-      "count": 3456
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "KitchenAid",
-    "features": [
-      "Includes garlic peeler tube",
-      "Large pressing chamber",
-      "Stainless steel construction",
-      "Comfortable grip handles",
-      "Cleaning brush included",
-      "Dishwasher safe"
-    ],
-    "specifications": {
-      "Material": "Stainless Steel, Silicone",
-      "Dimensions": "7.5 x 2.5 x 1.5 inches",
-      "Weight": "7 ounces",
-      "Set Includes": "Press, Peeler, Brush",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B0C1GH3KLM?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.694Z",
-    "updatedAt": "2025-12-23T19:06:23.840Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a867",
-    "asin": "B09MNP2QRS",
-    "title": "Joseph Joseph Easy-Press Garlic Crusher with Integrated Cleaning Tool",
-    "description": "Smart design features integrated cleaning tool that pushes out garlic residue with the same squeezing motion. No separate tools needed. Ergonomic handles and efficient crushing mechanism.",
-    "price": {
-      "amount": 18.99,
-      "currency": "USD",
-      "displayPrice": "$18.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/71xXyZqB9PL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/81PqRsXvYTL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.6,
-      "count": 2789
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Joseph Joseph",
-    "features": [
-      "Integrated cleaning tool",
-      "Self-cleaning mechanism",
-      "Ergonomic design",
-      "Premium materials",
-      "Dishwasher safe",
-      "Stylish modern look"
-    ],
-    "specifications": {
-      "Material": "Stainless Steel, Nylon",
-      "Dimensions": "7.8 x 2.8 x 1.8 inches",
-      "Weight": "6.5 ounces",
-      "Color": "Gray/Black",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B09MNP2QRS?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.694Z",
-    "updatedAt": "2025-12-23T19:06:23.840Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a868",
-    "asin": "B0D5FGHJ6K",
-    "title": "Garlic Twist - Peel and Crush Tool, No Press Needed",
-    "description": "Revolutionary design peels and minces garlic without a traditional press. Simply place unpeeled cloves inside, twist, and garlic comes out perfectly minced while skins stay inside. Quick rinse and it is ready to use again.",
-    "price": {
-      "amount": 12.99,
-      "currency": "USD",
-      "displayPrice": "$12.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/61yYxQkZHYL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/71ZqMnPqRTL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.2,
-      "count": 1654
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Garlic Twist",
-    "features": [
-      "No peeling required",
-      "Twist to mince garlic",
-      "Silicone construction",
-      "Easy to clean",
-      "Dishwasher safe",
-      "Compact storage"
-    ],
-    "specifications": {
-      "Material": "Food-Grade Silicone",
-      "Dimensions": "3.5 x 3.5 x 2.5 inches",
-      "Weight": "3 ounces",
-      "Color": "Red",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B0D5FGHJ6K?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.694Z",
-    "updatedAt": "2025-12-23T19:06:23.841Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a869",
-    "asin": "B07STVWXYZ",
-    "title": "Professional Garlic Press by Prepara - Restaurant Quality",
-    "description": "Commercial-grade garlic press built for high-volume use. Features oversized handles for extra leverage and a reinforced pressing mechanism. Used by professional chefs worldwide.",
-    "price": {
-      "amount": 26.99,
-      "currency": "USD",
-      "displayPrice": "$26.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/71bXvQnYPJL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/81RqsXvYTuL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.7,
-      "count": 892
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Prepara",
-    "features": [
-      "Commercial-grade construction",
-      "Oversized leverage handles",
-      "Reinforced mechanism",
-      "Heavy-duty stainless steel",
-      "Professional quality",
-      "Lifetime warranty"
-    ],
-    "specifications": {
-      "Material": "18/10 Stainless Steel",
-      "Dimensions": "8.5 x 3 x 2 inches",
-      "Weight": "11 ounces",
-      "Grade": "Professional/Commercial",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B07STVWXYZ?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.694Z",
-    "updatedAt": "2025-12-23T19:06:23.842Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a86a",
-    "asin": "B08PQRSTUV",
-    "title": "Budget Garlic Press - Simple and Effective",
-    "description": "No-frills garlic press that gets the job done. Simple lever design with basic construction. Perfect for occasional use and budget-conscious cooks.",
-    "price": {
-      "amount": 8.99,
-      "currency": "USD",
-      "displayPrice": "$8.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/61kLmNpQrZL._AC_SL1500_.jpg",
-      "variants": []
-    },
-    "rating": {
-      "average": 3.9,
-      "count": 2341
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "Generic",
-    "features": [
-      "Budget-friendly",
-      "Simple lever design",
-      "Basic construction",
-      "Easy to use",
-      "Compact size"
-    ],
-    "specifications": {
-      "Material": "Aluminum",
-      "Dimensions": "6.5 x 2 x 1 inches",
-      "Weight": "3.5 ounces",
-      "Color": "Silver",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B08PQRSTUV?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.694Z",
-    "updatedAt": "2025-12-23T19:06:23.843Z"
-  },
-  {
-    "_id": "6945d1f3b5e49475a481a86b",
-    "asin": "B0EFGH4567",
-    "title": "Electric Garlic Mincer - USB Rechargeable",
-    "description": "Modern electric garlic mincer eliminates all manual effort. USB rechargeable battery lasts for months. One-touch operation minces garlic in seconds. Includes stainless steel blade system.",
-    "price": {
-      "amount": 24.99,
-      "currency": "USD",
-      "displayPrice": "$24.99"
-    },
-    "category": "Home & Kitchen",
-    "subcategory": "Garlic Presses",
-    "images": {
-      "primary": "https://m.media-amazon.com/images/I/71pQmNxYrZL._AC_SL1500_.jpg",
-      "variants": [
-        "https://m.media-amazon.com/images/I/81XqsYvTuPL._AC_SL1500_.jpg",
-        "https://m.media-amazon.com/images/I/71NpQrXvYTL._AC_SL1500_.jpg"
-      ]
-    },
-    "rating": {
-      "average": 4.3,
-      "count": 1567
-    },
-    "availability": {
-      "status": "in_stock",
-      "message": "In Stock"
-    },
-    "brand": "HomeX",
-    "features": [
-      "Electric one-touch operation",
-      "USB rechargeable",
-      "Stainless steel blades",
-      "Easy to clean",
-      "Compact design",
-      "Includes USB cable"
-    ],
-    "specifications": {
-      "Material": "ABS Plastic, Stainless Steel",
-      "Dimensions": "4 x 4 x 3 inches",
-      "Weight": "8 ounces",
-      "Battery": "Rechargeable Lithium",
-      "Power": "USB Charging",
-      "Country of Origin": "China"
-    },
-    "amazonUrl": "https://www.amazon.com/dp/B0EFGH4567?tag=coobifl-20",
-    "origin": {
-      "source": "amazon_pa_api",
-      "marketplace": "US",
-      "importedBy": "seed_script",
-      "importedAt": "2025-12-19T22:30:11.634Z"
-    },
-    "crowdSourced": {
-      "isVerified": false,
-      "upvotes": 0,
-      "downvotes": 0,
-      "reportCount": 0,
-      "editHistory": [],
-      "reports": []
-    },
-    "__v": 0,
-    "createdAt": "2025-12-19T22:30:11.694Z",
-    "updatedAt": "2025-12-23T19:06:23.844Z"
-  },
-  {
     "_id": "69486e261abee0b3de481c04",
     "asin": "54TRWQG9RBF7",
     "title": "Gourmet Easy -No Peeling Required Stainless Steel Garlic Press with Detachable Handle for Fine Mincing - Premium Garlic Mincer Tool, Rust-Proof, Easy to Clean, Dishwasher Safe Garlic Crusher",
@@ -6407,5 +5422,837 @@
     "updatedAt": "2025-12-23T19:06:23.943Z",
     "__v": 0,
     "walmartUrl": "https://www.walmart.com/ip/1XV7GW2H1CS4"
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25676",
+    "asin": "B00I937QEI",
+    "title": "Alpha Grillers Garlic Press - Stainless Steel Garlic Mincer & Crusher",
+    "description": "Alpha Grillers Garlic Press - Stainless Steel Garlic Mincer & Crusher. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 16.97,
+      "currency": "USD",
+      "displayPrice": "$16.97"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B00I937QEI",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 18542
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Alpha Grillers",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B00I937QEI?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.358Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.362Z",
+    "updatedAt": "2025-12-24T01:24:19.362Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25679",
+    "asin": "B007ADJ4JI",
+    "title": "Dreamfarm Garject - Self-Cleaning Garlic Press (Black)",
+    "description": "Dreamfarm Garject - Self-Cleaning Garlic Press (Black). High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 24.95,
+      "currency": "USD",
+      "displayPrice": "$24.95"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B007ADJ4JI",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 8234
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Dreamfarm",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B007ADJ4JI?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.366Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.367Z",
+    "updatedAt": "2025-12-24T01:24:19.367Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e2567c",
+    "asin": "B00HHLNRVE",
+    "title": "ORBLUE Garlic Press - Stainless Steel Mincer and Crusher",
+    "description": "ORBLUE Garlic Press - Stainless Steel Mincer and Crusher. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 12.95,
+      "currency": "USD",
+      "displayPrice": "$12.95"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B00HHLNRVE",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 23456
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "ORBLUE",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B00HHLNRVE?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.369Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.369Z",
+    "updatedAt": "2025-12-24T01:24:19.369Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e2567f",
+    "asin": "B08W5DJ3B9",
+    "title": "Kuhn Rikon Easy-Clean Garlic Press - Swiss Made",
+    "description": "Kuhn Rikon Easy-Clean Garlic Press - Swiss Made. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 29.99,
+      "currency": "USD",
+      "displayPrice": "$29.99"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B08W5DJ3B9",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 3421
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Kuhn Rikon",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "Switzerland"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B08W5DJ3B9?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.371Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.372Z",
+    "updatedAt": "2025-12-24T01:24:19.372Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25682",
+    "asin": "B09QBDRCRK",
+    "title": "OXO Good Grips Stainless Steel Garlic Press",
+    "description": "OXO Good Grips Stainless Steel Garlic Press. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 19.95,
+      "currency": "USD",
+      "displayPrice": "$19.95"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B09QBDRCRK",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 15678
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "OXO",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B09QBDRCRK?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.376Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.377Z",
+    "updatedAt": "2025-12-24T01:24:19.377Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25685",
+    "asin": "B007D3V00Q",
+    "title": "Zyliss Susi 3 Garlic Press - Professional Quality",
+    "description": "Zyliss Susi 3 Garlic Press - Professional Quality. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 16.99,
+      "currency": "USD",
+      "displayPrice": "$16.99"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B007D3V00Q",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.4,
+      "count": 9876
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Zyliss",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B007D3V00Q?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.378Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.379Z",
+    "updatedAt": "2025-12-24T01:24:19.379Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25688",
+    "asin": "B07N7KFHVH",
+    "title": "Zulay Kitchen Premium Quality Garlic Press",
+    "description": "Zulay Kitchen Premium Quality Garlic Press. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 13.97,
+      "currency": "USD",
+      "displayPrice": "$13.97"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B07N7KFHVH",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 12345
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Zulay Kitchen",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B07N7KFHVH?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.380Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.381Z",
+    "updatedAt": "2025-12-24T01:24:19.381Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e2568b",
+    "asin": "B06Y4F2MK4",
+    "title": "Dreamfarm Garject - Self-Cleaning Garlic Press (Green)",
+    "description": "Dreamfarm Garject - Self-Cleaning Garlic Press (Green). High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 24.95,
+      "currency": "USD",
+      "displayPrice": "$24.95"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B06Y4F2MK4",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 7654
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Dreamfarm",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B06Y4F2MK4?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.382Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.382Z",
+    "updatedAt": "2025-12-24T01:24:19.382Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e2568d",
+    "asin": "B00XCSLO1Q",
+    "title": "Dreamfarm Garject - Self-Cleaning Garlic Press (Red)",
+    "description": "Dreamfarm Garject - Self-Cleaning Garlic Press (Red). High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 24.95,
+      "currency": "USD",
+      "displayPrice": "$24.95"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B00XCSLO1Q",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 6543
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Dreamfarm",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B00XCSLO1Q?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.384Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.384Z",
+    "updatedAt": "2025-12-24T01:24:19.384Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e2568f",
+    "asin": "B00HEZ888K",
+    "title": "OXO Good Grips Heavy Duty Garlic Press",
+    "description": "OXO Good Grips Heavy Duty Garlic Press. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 21.95,
+      "currency": "USD",
+      "displayPrice": "$21.95"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B00HEZ888K",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 14567
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "OXO",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B00HEZ888K?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.386Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.386Z",
+    "updatedAt": "2025-12-24T01:24:19.386Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25691",
+    "asin": "B016KMPVOQ",
+    "title": "OXO Garlic Press - Stainless Steel Construction",
+    "description": "OXO Garlic Press - Stainless Steel Construction. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 18.95,
+      "currency": "USD",
+      "displayPrice": "$18.95"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B016KMPVOQ",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 11234
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "OXO",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B016KMPVOQ?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.388Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.389Z",
+    "updatedAt": "2025-12-24T01:24:19.389Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25693",
+    "asin": "B00CS9BZNM",
+    "title": "Kuhn Rikon Easy Clean Garlic Press (Green)",
+    "description": "Kuhn Rikon Easy Clean Garlic Press (Green). High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 29.99,
+      "currency": "USD",
+      "displayPrice": "$29.99"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B00CS9BZNM",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 4321
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Kuhn Rikon",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "Switzerland"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B00CS9BZNM?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.393Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.393Z",
+    "updatedAt": "2025-12-24T01:24:19.393Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25695",
+    "asin": "B07QL9P493",
+    "title": "Kuhn Rikon Easy-Clean Garlic Press (Red)",
+    "description": "Kuhn Rikon Easy-Clean Garlic Press (Red). High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 29.99,
+      "currency": "USD",
+      "displayPrice": "$29.99"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B07QL9P493",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 3987
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Kuhn Rikon",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "Switzerland"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B07QL9P493?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.395Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.396Z",
+    "updatedAt": "2025-12-24T01:24:19.396Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25697",
+    "asin": "B00CBM6K9K",
+    "title": "Kuhn Rikon Easy-Squeeze Garlic Press",
+    "description": "Kuhn Rikon Easy-Squeeze Garlic Press. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 27.99,
+      "currency": "USD",
+      "displayPrice": "$27.99"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B00CBM6K9K",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 5432
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Kuhn Rikon",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "Switzerland"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B00CBM6K9K?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.397Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.397Z",
+    "updatedAt": "2025-12-24T01:24:19.397Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e25699",
+    "asin": "B01ATV4O2O",
+    "title": "Joseph Joseph Garlic Rocker Crusher - Modern Design",
+    "description": "Joseph Joseph Garlic Rocker Crusher - Modern Design. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 14.99,
+      "currency": "USD",
+      "displayPrice": "$14.99"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B01ATV4O2O",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.3,
+      "count": 7890
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Joseph Joseph",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "China"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B01ATV4O2O?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.400Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.400Z",
+    "updatedAt": "2025-12-24T01:24:19.400Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b40c3fbbd2f5f78e2569b",
+    "asin": "B000LNRPC2",
+    "title": "Norpro Silver Garlic Press - Classic Design",
+    "description": "Norpro Silver Garlic Press - Classic Design. High-quality garlic press for your kitchen needs.",
+    "price": {
+      "amount": 11.99,
+      "currency": "USD",
+      "displayPrice": "$11.99"
+    },
+    "category": "Home & Kitchen",
+    "subcategory": "Garlic Presses",
+    "images": {
+      "primary": "https://via.placeholder.com/400x400?text=B000LNRPC2",
+      "variants": []
+    },
+    "rating": {
+      "average": 4.4,
+      "count": 9012
+    },
+    "availability": {
+      "status": "in_stock",
+      "message": "In Stock"
+    },
+    "brand": "Norpro",
+    "features": [
+      "Heavy duty construction",
+      "Easy to clean",
+      "Professional quality",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "Country of Origin": "USA"
+    },
+    "amazonUrl": "https://www.amazon.com/dp/B000LNRPC2?tag=coobifl-20",
+    "origin": {
+      "source": "amazon_pa_api",
+      "marketplace": "US",
+      "importedAt": "2025-12-24T01:24:19.401Z"
+    },
+    "crowdSourced": {
+      "isVerified": false,
+      "upvotes": 0,
+      "downvotes": 0,
+      "reportCount": 0,
+      "editHistory": [],
+      "reports": []
+    },
+    "createdAt": "2025-12-24T01:24:19.402Z",
+    "updatedAt": "2025-12-24T01:24:19.402Z",
+    "__v": 0
   }
 ]
