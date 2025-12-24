@@ -248,7 +248,9 @@
             let image;
             if (product.origin?.source === 'amazon_pa_api' || (product.asin && product.asin.startsWith('B'))) {
                 // Amazon product - use local image
-                image = `/images/products/${product.asin}.jpg`;
+                // Strip affiliate tag if present (e.g., B00004OCNS?tag=coobifl-20 -> B00004OCNS)
+                const cleanAsin = product.asin.split('?')[0];
+                image = `/images/products/${cleanAsin}.jpg`;
             } else {
                 // Walmart or other - use API image
                 image = product.images?.primary || 'https://via.placeholder.com/200x200?text=No+Image';
