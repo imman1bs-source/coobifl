@@ -3,6 +3,6 @@ builder = "nixpacks"
 buildCommand = "npm run build"
 
 [deploy]
-startCommand = "node backend/scripts/replaceAmazonProductsInProduction.js && node backend/src/app.js"
+startCommand = "npm start"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 10
